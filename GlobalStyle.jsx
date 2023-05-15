@@ -40,6 +40,7 @@ export const Container = styled.div`
   padding-top: ${({ pt }) => (pt ? pt : "")};
   padding-bottom: ${({ pb }) => (pb ? pb : "")};
   border-bottom: ${(props) => (props.border ? props.border : "#FEFFFE")};
+  
   @media screen and (max-width: 992px) {
     padding-top: ${({ pt }) => (pt ? pt : "")};
     padding-bottom: ${({ pb }) => (pb ? pb : "")};
