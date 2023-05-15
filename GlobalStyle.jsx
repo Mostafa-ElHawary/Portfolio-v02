@@ -5,11 +5,11 @@ const GlobalStyle = createGlobalStyle`
     box-sizing:border-box;
     margin:0;
     padding:0;
-    font-family: 'Chivo Mono', monospace;
-    font-family: 'Roboto Mono', monospace;
     font-family: 'Rubik', sans-serif;
+    font-family: 'Roboto Mono', monospace;
     font-family: 'Ubuntu', sans-serif;
     font-family: 'Work Sans', sans-serif;
+    font-family: 'Chivo Mono', monospace;
 }`;
 export const Section = styled.section`
   padding: ${({ padding }) => (padding ? padding : "")};
@@ -115,6 +115,26 @@ export const Column = styled.div`
   height: ${({ height }) => (height ? height : "auto")};
   max-height: ${({ maxHeight }) => (maxHeight ? maxHeight : "auto")};
   min-height: ${({ minHeight }) => (minHeight ? minHeight : "auto")};
+`;
+
+
+export  const StyledButton = styled.a`
+    color: #64ffda;
+    border: 1px solid #64ffda;
+    font-size: 14px;
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+    padding:  ${(props) => (props.pad ? props.pad : "")};
+  cursor: pointer;
+  transition: transform 0.4s, border-bottom 0.1s, border-right 0.1s;
+
+  &:hover {
+    transform: translate(-5px , -5px);
+
+    border-bottom: 3px solid #64ffda;
+    border-right: 3px solid #64ffda;
+  }
 `;
 
 export default GlobalStyle;

@@ -1,5 +1,6 @@
 import React from "react";
-import { MainContainer, NameWrapper, StyledButton ,LandingContainer } from "./MainStyle";
+import { StyledButton } from "../../../GlobalStyle";
+import { MainContainer, NameWrapper, LandingContainer } from "./MainStyle";
 import "./aurora.css";
 
 const ChildComponent = ({ styledButton }) => {
@@ -40,7 +41,8 @@ function Main() {
         </p>
         <ChildComponent
           styledButton={
-            <StyledButton pad='15px 28px'
+            <StyledButton
+              pad="15px 28px"
               href="#projects"
               className="landing__navigator landing__navigator--green-btn"
             >
@@ -50,7 +52,7 @@ function Main() {
         />
       </LandingContainer>
     </MainContainer>
-  );
+  )
 }
 
 export default Main;
