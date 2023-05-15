@@ -1,25 +1,25 @@
 import React from "react";
-import { MainContainer } from "./MainStyle";
+import { MainContainer, NameWrapper} from "./MainStyle";
 import "./aurora.css";
 function Main() {
   return (
-    <MainContainer class="landing">
-      <div class="landing__container">
-        <h1 class="landing__text">Hi, my name is</h1>
-        <h2 class="landing__heading">Mostafa El Hawary.</h2>
+    <MainContainer className="landing">
+      <div className="landing__container">
+        <NameWrapper className="landing__text">Hi, my name is</NameWrapper>
+        <h2 className="landing__heading">Mostafa El Hawary.</h2>
 
-        <div class="content">
-          <h1 class="title">
+        <div className="content">
+          <h1 className="title">
           I Build Stuff For The Web.
-            <div class="aurora">
-              <div class="aurora__item"></div>
-              <div class="aurora__item"></div>
-              <div class="aurora__item"></div>
-              <div class="aurora__item"></div>
+            <div className="aurora">
+              <div className="aurora__item"></div>
+              <div className="aurora__item"></div>
+              <div className="aurora__item"></div>
+              <div className="aurora__item"></div>
             </div>
           </h1>
         </div>
-        <p class="landing__bio">
+        <p className="landing__bio">
           Based in the EG, I'm a Full-stack Engineer .My particular field of
           expertise is in generating innovative ideas to overcome challenges and
           translating them into practical software solutions Now I'm focusing on
@@ -27,7 +27,7 @@ function Main() {
           <a
             href="https://github.com/youssef579"
             target="_blank"
-            class="landing__external landing__external-link--green-link"
+            className="landing__external landing__external-link--green-link"
           >
             GitHub
           </a>
@@ -35,7 +35,7 @@ function Main() {
         </p>
         <a
           href="#projects"
-          class="landing__navigator landing__navigator--green-btn"
+          className="landing__navigator landing__navigator--green-btn"
         >
           Check out my work!
         </a>
