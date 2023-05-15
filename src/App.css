@@ -39,5 +39,5 @@ body {
   color: var(--very-dark-blue);
   display: grid;
   place-items: center;
-  padding: 2rem;
+  padding:  0 2rem;
 }
