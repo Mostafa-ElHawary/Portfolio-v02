@@ -1,7 +1,10 @@
-import { createGlobalStyle } from "styled-components";
+import styled ,{ createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
 *{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
     font-family: 'Chivo Mono', monospace;
     font-family: 'Roboto Mono', monospace;
     font-family: 'Rubik', sans-serif;

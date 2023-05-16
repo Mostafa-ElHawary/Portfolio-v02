@@ -1,16 +1,21 @@
 import React from "react";
-import { MainContainer, NameWrapper} from "./MainStyle";
+import { MainContainer, NameWrapper, StyledButton ,LandingContainer } from "./MainStyle";
 import "./aurora.css";
+
+const ChildComponent = ({ styledButton }) => {
+  return <div>{styledButton}</div>;
+};
+
 function Main() {
   return (
     <MainContainer className="landing">
-      <div className="landing__container">
+      <LandingContainer className="landing__container">
         <NameWrapper className="landing__text">Hi, my name is</NameWrapper>
         <h2 className="landing__heading">Mostafa El Hawary.</h2>
 
         <div className="content">
           <h1 className="title">
-          I Build Stuff For The Web.
+            I Build Stuff For The Web.
             <div className="aurora">
               <div className="aurora__item"></div>
               <div className="aurora__item"></div>
@@ -33,13 +38,17 @@ function Main() {
           </a>
           for more details. Have a nice day!
         </p>
-        <a
-          href="#projects"
-          className="landing__navigator landing__navigator--green-btn"
-        >
-          Check out my work!
-        </a>
-      </div>
+        <ChildComponent
+          styledButton={
+            <StyledButton pad='15px 28px'
+              href="#projects"
+              className="landing__navigator landing__navigator--green-btn"
+            >
+              Check out my work!
+            </StyledButton>
+          }
+        />
+      </LandingContainer>
     </MainContainer>
   );
 }
