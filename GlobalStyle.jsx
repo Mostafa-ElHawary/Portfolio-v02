@@ -40,7 +40,7 @@ export const Container = styled.div`
   padding-top: ${({ pt }) => (pt ? pt : "")};
   padding-bottom: ${({ pb }) => (pb ? pb : "")};
   border-bottom: ${(props) => (props.border ? props.border : "#FEFFFE")};
-  
+
   @media screen and (max-width: 992px) {
     padding-top: ${({ pt }) => (pt ? pt : "")};
     padding-bottom: ${({ pb }) => (pb ? pb : "")};
@@ -132,7 +132,6 @@ export  const StyledButton = styled.a`
 
   &:hover {
     transform: translate(-5px , -5px);
-
     border-bottom: 3px solid #64ffda;
     border-right: 3px solid #64ffda;
   }

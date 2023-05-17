@@ -1,6 +1,13 @@
 import React from "react";
 import { StyledButton } from "../../../GlobalStyle";
-import { MainContainer, NameWrapper, LandingContainer , TitleWrapper , LandingbioWrapper , GreenlinkWrapper} from "./MainStyle";
+import {
+  MainContainer,
+  NameWrapper,
+  LandingContainer,
+  TitleWrapper,
+  LandingbioWrapper,
+  GreenlinkWrapper,
+} from "./MainStyle";
 import "./aurora.css";
 
 const ChildComponent = ({ styledButton }) => {
@@ -31,18 +38,18 @@ function Main() {
           translating them into practical software solutions Now I'm focusing on
           improving my skills and knowledge. You can see my work on{" "}
           <GreenlinkWrapper
-            href="https://github.com/youssef579"
+            href="https://github.com/Mostafa-ElHawary"
             target="_blank"
             className="landing__external landing__external-link--green-link"
           >
             GitHub
-          </GreenlinkWrapper>
-          {" "}for more details. Have a nice day!
+          </GreenlinkWrapper>{" "}
+          for more details. Have a nice day!
         </LandingbioWrapper>
         <ChildComponent
           styledButton={
             <StyledButton
-              pad="15px 28px"
+              pad={window.innerWidth <= 768 ? "10px 20px" : "15px 28px"}
               href="#projects"
               className="landing__navigator landing__navigator--green-btn"
             >
@@ -52,7 +59,7 @@ function Main() {
         />
       </LandingContainer>
     </MainContainer>
-  )
+  );
 }
 
 export default Main;
