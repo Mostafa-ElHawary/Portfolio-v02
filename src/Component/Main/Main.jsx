@@ -33,10 +33,7 @@ function Main() {
           </TitleWrapper>
         </div>
         <LandingbioWrapper className="landing__bio">
-          Based in the EG, I'm a Full-stack Engineer .My particular field of
-          expertise is in generating innovative ideas to overcome challenges and
-          translating them into practical software solutions Now I'm focusing on
-          improving my skills and knowledge. You can see my work on{" "}
+          Based in the EG, I'm a Full-stack Engineer. You can see my work on{" "}
           <GreenlinkWrapper
             href="https://github.com/Mostafa-ElHawary"
             target="_blank"
@@ -44,7 +41,7 @@ function Main() {
           >
             GitHub
           </GreenlinkWrapper>{" "}
-          for more details. Have a nice day!
+          Have a nice day!
         </LandingbioWrapper>
         <ChildComponent
           styledButton={

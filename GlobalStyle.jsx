@@ -36,7 +36,7 @@ export const Container = styled.div`
   margin-right: auto;
   margin-left: auto;
   padding: 0 50px;
-  background: ${({ inverse }) => (inverse ? "#252425" : "#141514")};
+  background: ${({ inverse }) => (inverse ? "#0A182E" : "#141514")};
   padding-top: ${({ pt }) => (pt ? pt : "")};
   padding-bottom: ${({ pb }) => (pb ? pb : "")};
   border-bottom: ${(props) => (props.border ? props.border : "#FEFFFE")};
