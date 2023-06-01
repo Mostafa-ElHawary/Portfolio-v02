@@ -3,16 +3,20 @@
 // Next image optimization
 // import Image from "next/image";
 // import Technology from "@/components/Technology";
-
+import { AboutContainer } from "./AboutStyle";
 function About() {
   return (
-    <section className="about" id="about">
+    <AboutContainer className="about" id="about">
+
       <div className="about__container">
+
         <h1 className="about__heading about__heading--section-heading">
           About me
           <hr />
         </h1>
+
         <div className="content">
+
           <div className="content__bio">
             <p>
               Hello! My name is Mostafa El Hawary, I&apos;m{" "}
@@ -26,37 +30,35 @@ function About() {
               >
                 Data Structure & Algorithmes
               </a>{" "}
-              course  when I decided to learn how to code
-              and make stuff out of the box.
+              course when I decided to learn how to code and make stuff out of
+              the box.
             </p>
             <br />
             <p>
-              I started to think about the internet and how it works,
-              so I focused on web development (especially Full-stack) and doing
-              my best here.
+              I started to think about the internet and how it works, so I
+              focused on web development (especially Full-stack) and doing my
+              best here.
             </p>
             <br />
             <p>Here are a few technologies I&apos;ve been working with:</p>
             <ul className="content__technologies">
-
-          {     
-              //   {technologies.map((technology) => (
-              //     <Technology key={technology.id} {...technology} />
-              //   ))}
-
+              {
+                //   {technologies.map((technology) => (
+                //     <Technology key={technology.id} {...technology} />
+                //   ))}
               }
-
-              
             </ul>
           </div>
           <div className="content__image">
-          {  
-            // <Image src={logo} alt="Logo" fill placeholder="blur" priority />
-        }
+            {
+              // <Image src={logo} alt="Logo" fill placeholder="blur" priority />
+            }
           </div>
+          
         </div>
       </div>
-    </section>
+
+    </AboutContainer>
   );
 }
 export default About;
