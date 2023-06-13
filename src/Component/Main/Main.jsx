@@ -33,7 +33,7 @@ function Main() {
           </TitleWrapper>
         </div>
         <LandingbioWrapper className="landing__bio">
-          Based in the EG, I'm a Full-stack Engineer. You can see my work on{" "}
+        Experienced software developer dedicated to delivering high-quality code and enhancing user experiences. You can see my work on{" "}
           <GreenlinkWrapper
             href="https://github.com/Mostafa-ElHawary"
             target="_blank"
