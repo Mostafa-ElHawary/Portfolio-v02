@@ -27,7 +27,7 @@ export const TitleWrapper = styled.h1`
 `;
 export const LandingbioWrapper = styled.p`
 
-font-size: clamp(1.1rem, 1.5vw, 1.5rem);
+font-size: clamp(1.1rem, 1vw, 1.5rem);
 color:hsl(219, 14%, 63%);
 padding: 20px 30% 20px 0 ;
 

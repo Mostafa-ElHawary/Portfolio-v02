@@ -2,37 +2,44 @@
     {
       "id": 1,
       "tech": "React",
-      "img": "https://cdn.sanity.io/images/5db7tpcr/production/17662d5aa83f67d2102cf7aa9b908e52558fb957-25x25.svg"
+      "img": "https://cdn.sanity.io/images/5db7tpcr/production/17662d5aa83f67d2102cf7aa9b908e52558fb957-25x25.svg",
+      "color":"#78d3e230"
     },
     {
       "id": 2,
       "tech": "TypeScript",
-      "img": "https://cdn.sanity.io/images/5db7tpcr/production/62b9ccbaf4e42c75b27304e9e466dc6cb8fb1f30-24x24.svg"
+      "img": "https://cdn.sanity.io/images/5db7tpcr/production/62b9ccbaf4e42c75b27304e9e466dc6cb8fb1f30-24x24.svg",
+      "color":"#047ccc30"
     },
     {
       "id": 3,
       "tech": "Next.js",
-      "img": "https://cdn.sanity.io/images/5db7tpcr/production/b86d0c6de6cf5c4692bd91f1135c4932bc4f47ce-256x256.svg"
+      "img": "https://cdn.sanity.io/images/5db7tpcr/production/b86d0c6de6cf5c4692bd91f1135c4932bc4f47ce-256x256.svg",
+      "color":"#b5b8bf30"
     },
     {
       "id": 4,
       "tech": "Firebase",
-      "img": "https://cdn.sanity.io/images/5db7tpcr/production/c941614c2558cddcb2daecc33a23d940b838efb1-64x64.svg"
+      "img": "https://cdn.sanity.io/images/5db7tpcr/production/c941614c2558cddcb2daecc33a23d940b838efb1-64x64.svg",
+      "color":"#fbca2430"
     },
     {
       "id": 5,
       "tech": "Tailwind",
-      "img": "https://cdn.sanity.io/images/5db7tpcr/production/c5c92ebc803c58eb0d56f076904eef9ef34d69b9-123x73.svg"
+      "img": "https://cdn.sanity.io/images/5db7tpcr/production/c5c92ebc803c58eb0d56f076904eef9ef34d69b9-123x73.svg",
+      "color":"#13b2ec30"
     },
     {
       "id": 6,
       "tech": "Node.js",
-      "img": "https://cdn.sanity.io/images/5db7tpcr/production/c5c92ebc803c58eb0d56f076904eef9ef34d69b9-123x73.svg"
+      "img": "https://cdn.sanity.io/images/5db7tpcr/production/c5c92ebc803c58eb0d56f076904eef9ef34d69b9-123x73.svg",
+      "color":"#13b2ec30"
     },
     {
       "id": 7,
       "tech": "Express.js",
-      "img": "https://cdn.sanity.io/images/5db7tpcr/production/c5c92ebc803c58eb0d56f076904eef9ef34d69b9-123x73.svg"
+      "img": "https://cdn.sanity.io/images/5db7tpcr/production/c5c92ebc803c58eb0d56f076904eef9ef34d69b9-123x73.svg",
+      "color":"#13b2ec30"
     }
   ]
   
