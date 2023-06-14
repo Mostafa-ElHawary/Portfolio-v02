@@ -18,8 +18,10 @@ function Main() {
   return (
     <MainContainer className="landing">
       <LandingContainer className="landing__container">
-        <NameWrapper className="landing__text">Hi, my name is</NameWrapper>
-        <h2 className="landing__heading">Mostafa El Hawary.</h2>
+        <NameWrapper className="landing__text">Hi</NameWrapper>
+       { 
+        // <h2 className="landing__heading">Mostafa El Hawary.</h2>
+      }
 
         <div className="content">
           <TitleWrapper className="title">

@@ -7,10 +7,7 @@ import {
   AboutContainer,
   AboutmeH1,
   ContentBioP,
-  UlContainerTech,
-  LiContainerTech,
 } from "./AboutStyle";
-import Data from "./dataTech.json";
 function About() {
   return (
     <AboutContainer className="about" id="about">
@@ -33,23 +30,10 @@ function About() {
               challenges and solving problems one project at a time. If you're
               looking for a full-stack software developer or a mobile app
               developer, you've come to the right place!
-              <br />
-              <p>Here are a few technologies I&apos;ve been working with:</p>
+           
             </ContentBioP>
 
-            <UlContainerTech className="content__technologies">
-              {Data.map((technology) => (
-                <LiContainerTech className="technology" key={technology.id}>
-                  <div
-                    className="technology__icon"
-                    style={{ backgroundColor: technology.color }}
-                  >
-                    <img src={technology.img} alt={technology.tech} />
-                  </div>
-                  <p className="technology__name">{technology.tech}</p>
-                </LiContainerTech>
-              ))}
-            </UlContainerTech>
+          
           </div>
         </div>
       </div>
