@@ -1,6 +1,6 @@
 import "./App.css";
 import Main from "./Component/Main/Main";
-import About from "./Component/About/About";
+import Introduction from "./Component/Introduction/Introduction";
 import Technologies from "./Component/Technologies/Technologies";
 import GlobalStyle, { Container } from "../GlobalStyle";
 import { BrowserRouter as Router } from "react-router-dom";
@@ -11,7 +11,7 @@ function App() {
 
       <Container inverse>
         <Main />
-        <About/>
+        <Introduction/>
         <Technologies />
       </Container>
     </Router>

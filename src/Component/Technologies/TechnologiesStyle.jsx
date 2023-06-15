@@ -1,8 +1,5 @@
 import styled, { css } from "styled-components";
 
-
-
-
 export const Container = styled.div`
   height: 100vh;
   display: grid;
@@ -23,17 +20,6 @@ export const Text = styled.p`
   color: hsl(219, 14%, 63%);
 `;
 
-// export const UlContainerTech = styled.ul`
-//   list-style-type: none;
-//   padding: 0;
-// `;
-
-// export const LiContainerTech = styled.li`
-//   display: flex;
-//   align-items: center;
-//   margin-bottom: 20px;
-// `;
-
 export const TechIcon = styled.div`
   background-color: ${({ backgroundColor }) => backgroundColor};
 `;
@@ -46,7 +32,6 @@ export const TechImage = styled.img`
 export const TechName = styled.p`
   margin-left: 10px;
 `;
-
 
 export const UlContainerTech = styled.ul`
   width: 100%;

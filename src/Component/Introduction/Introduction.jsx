@@ -3,15 +3,11 @@
 // Next image optimization
 // import Image from "next/image";
 // import Technology from "@/components/Technology";
-import {
-  AboutContainer,
-  AboutmeH1,
-  ContentBioP,
-} from "./AboutStyle";
-function About() {
+import { WrapperAboutContainer,  AboutContainer, AboutmeH1, ContentBioP , Section , WrapperSection } from "./IntroductionStyle";
+function Introduction() {
   return (
-    <AboutContainer className="about" id="about">
-      <div className="about__container">
+    <WrapperAboutContainer className="about" id="about">
+      <AboutContainer className="about__container">
         <div className="content">
           <AboutmeH1 className="about__heading about__heading--section-heading">
             Introduction
@@ -30,14 +26,46 @@ function About() {
               challenges and solving problems one project at a time. If you're
               looking for a full-stack software developer or a mobile app
               developer, you've come to the right place!
-           
             </ContentBioP>
-
-          
           </div>
         </div>
-      </div>
-    </AboutContainer>
+
+        <WrapperSection>
+
+          <Section>
+            <section>
+              <p>Front End</p>
+              <i></i>
+            </section>
+            <p>
+              {" "}
+              Delivering seamless user interfaces with expertise in front-end
+              development.
+            </p>
+            <span>
+              {" "}
+              <a>MORE PROJECTS</a>{" "}
+            </span>
+          </Section>
+
+          <Section>
+            <section>
+              <p>Back-End</p>
+              <i></i>
+            </section>
+            <p>
+              {" "}
+              Developing secure and high-performance systems with proficiency in using top frameworks.
+            </p>
+            <span>
+              {" "}
+              <a>MORE PROJECTS</a>{" "}
+            </span>
+          </Section>
+
+        </WrapperSection>
+      </AboutContainer>
+    </WrapperAboutContainer>
   );
 }
-export default About;
+export default Introduction;

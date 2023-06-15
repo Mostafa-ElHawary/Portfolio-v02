@@ -1,0 +1,60 @@
+import styled, { css } from "styled-components";
+
+export const WrapperAboutContainer = styled.div`
+
+height: 100vh;
+display: grid;
+align-items: center;
+`
+
+export const AboutContainer = styled.section`
+
+
+`;
+export const AboutmeH1 = styled.h1`
+  margin-bottom: clamp(10px, 2vw, 20px);
+  color: #64ffda;
+  font-weight: 400;
+  text-transform: none;
+  font-size: clamp(1rem, 1.5vw, 4rem);
+`;
+export const ContentBioContainer = styled.div`
+  display: grid;
+`;
+export const ContentBioP = styled.p`
+  font-size: clamp(1.1rem, 1vw, 1.5rem);
+  color: hsl(219, 14%, 63%);
+  `;
+  // @media screen and (max-width: 768px) { }
+  // @media screen and (max-width: 992px) {}
+  // @media screen and (max-width: 1100px){}
+
+
+  export const WrapperSection = styled.section`
+  
+  display: grid;
+  gap: 15px;
+
+
+
+  `
+
+  export const Section = styled.section`
+  
+    width: 100%;
+    /* height: 80px; */
+    list-style: none;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    -webkit-box-align: center;
+    align-items: center;
+    font-size: clamp(1.1rem, 1vw, 1.5rem);
+    cursor: pointer;
+    /* color: rgb(136, 146, 176); */
+    background-color: rgba(17, 34, 64, 0.467);
+    border-radius: 10px;
+    padding: 10px 15px;
+    gap: 15px;
+    box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px;
+  
+  `
