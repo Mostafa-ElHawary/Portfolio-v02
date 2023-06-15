@@ -34,7 +34,7 @@ function Introduction() {
 
           <Section>
             <section>
-              <p>Front End</p>
+              <h3>Front End</h3>
               <i></i>
             </section>
             <p>
@@ -50,7 +50,7 @@ function Introduction() {
 
           <Section>
             <section>
-              <p>Back-End</p>
+              <h3>Back-End</h3>
               <i></i>
             </section>
             <p>
