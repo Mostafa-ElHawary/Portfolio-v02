@@ -1,6 +1,7 @@
 import React from "react";
 import Data from "./dataTech.json";
 import "./Anmi.css";
+
 import {
   Container,
   Title,
@@ -22,22 +23,37 @@ const COLORS = [
   "#fee2e2",
 ];
 const TAGS = [
-  "HTML",
-  "CSS",
+
   "JavaScript",
   "Typescript",
   "Tailwind",
   "React",
+  "Node.js",
   "Next.js",
-  "Gatsby",
+  "Express.js",
   "UI/UX",
   "SVG",
-  "animation",
-  "webdev",
+  "Git",
+  "C++",
+  "python"
+
+
 ];
-const DURATION = 15000;
-const ROWS = 5;
-const TAGS_PER_ROW = 5;
+
+const LINKS = [
+
+  "https://cdn.sanity.io/images/5db7tpcr/production/17662d5aa83f67d2102cf7aa9b908e52558fb957-25x25.svg",
+  "https://cdn.sanity.io/images/5db7tpcr/production/62b9ccbaf4e42c75b27304e9e466dc6cb8fb1f30-24x24.svg",
+  "https://cdn.sanity.io/images/5db7tpcr/production/b86d0c6de6cf5c4692bd91f1135c4932bc4f47ce-256x256.svg",
+  "https://cdn.sanity.io/images/5db7tpcr/production/c941614c2558cddcb2daecc33a23d940b838efb1-64x64.svg",
+  "https://cdn.sanity.io/images/5db7tpcr/production/c5c92ebc803c58eb0d56f076904eef9ef34d69b9-123x73.svg",
+  "https://cdn.sanity.io/images/5db7tpcr/production/c5c92ebc803c58eb0d56f076904eef9ef34d69b9-123x73.svg",
+  "https://cdn.sanity.io/images/5db7tpcr/production/c5c92ebc803c58eb0d56f076904eef9ef34d69b9-123x73.svg",
+
+]
+const DURATION = 30000;
+const ROWS = 4;
+const TAGS_PER_ROW = 4;
 
 const random = (min, max) => Math.floor(Math.random() * (max - min)) + min;
 const shuffle = (arr) => [...arr].sort(() => 0.5 - Math.random());
@@ -79,35 +95,15 @@ function Technologies() {
         extra dimension to my skill set.
         <br />
         Here are a few technologies I&apos;ve been working with:
-        {
-          //    <p>
-          //     </p>
-        }
       </Text>
 
-      {
-        // <UlContainerTech className="content__technologies">
-        //   {Data.map((technology) => (
-        //     <LiContainerTech className="technology" key={technology.id}>
-        //       <TechIcon
-        //         className="technology__icon"
-        //         style={{ backgroundColor: technology.color }}
-        //       >
-        //         <TechImage src={technology.img} alt={technology.tech} />
-        //       </TechIcon>
-        //       <TechName className="technology__name">{technology.tech}</TechName>
-        //     </LiContainerTech>
-        //   ))}
-        //   </UlContainerTech>
-      }
-
+  
       <div className="app">
-      <header></header>
       <div className="tag-list">
         {[...new Array(ROWS)].map((_, i) => (
           <InfiniteLoopSlider
             key={i}
-            duration={random(DURATION - 5000, DURATION + 5000)}
+            duration={random(DURATION - 5000, DURATION + 4000)}
             reverse={i % 2}
           >
             {shuffle(TAGS)
@@ -120,6 +116,7 @@ function Technologies() {
         <div className="fade" />
       </div>
     </div>
+
     </Container>
   );
 }

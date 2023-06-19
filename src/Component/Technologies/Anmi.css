@@ -60,25 +60,28 @@ body {
   }
   
   .tag {
+    /* color: #e2e8f0; */
+    /* font-size: 0.9rem; */
+    /* background-color: #334155; */
+    /* box-shadow: 
+    0 0.1rem 0.2rem rgb(0 0 0 / 20%),
+    0 0.1rem 0.5rem rgb(0 0 0 / 30%),
+    0 0.2rem 1.5rem rgb(0 0 0 / 40%);
+    */
+    /* gap: 0 0.2rem; */
     display: flex;
     align-items: center;
-    gap: 0 0.2rem;
-    color: #e2e8f0;
-    font-size: 0.9rem;
-    /* background-color: #334155; */
+    color: #64ffda;
     border-radius: 0.4rem;
     padding: 0.7rem 1rem;
     margin-right: 1rem; 
-    /* box-shadow: 
-      0 0.1rem 0.2rem rgb(0 0 0 / 20%),
-      0 0.1rem 0.5rem rgb(0 0 0 / 30%),
-      0 0.2rem 1.5rem rgb(0 0 0 / 40%);
-     */
      background-color: rgba(17, 34, 64, 0.467);
      border-radius: 10px;
      padding: 10px 15px;
      gap: 15px;
      box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+     font-family: "Chivo Mono", monospace;
+     font-size: clamp(1rem, 1.5vw, 4rem);
     span {
       font-size: 1.2rem;
       color: #64748b;
@@ -87,7 +90,7 @@ body {
   
   .fade {
     pointer-events: none;
-    background: linear-gradient(90deg, #0A182E, transparent 30%, transparent 70%, #0A182E);
+    background: linear-gradient(90deg, #0A182E, transparent 50%, transparent 0%, #0A182E);
     position: absolute;
     inset: 0;
   }

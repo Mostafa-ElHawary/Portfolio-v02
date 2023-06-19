@@ -13,7 +13,6 @@ function App() {
         <Main />
         <Introduction/>
          <Technologies />
-
       </Container>
     </Router>
   );
