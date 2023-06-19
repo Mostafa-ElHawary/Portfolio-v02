@@ -3,6 +3,16 @@ import styled, { css } from "styled-components";
 export const Container = styled.div`
   height: 100vh;
   display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 6rem;
+	@media screen and (max-width: 1100px) {
+		grid-template-columns: repeat(2, 1fr);
+		grid-row-gap: 4rem;
+	}
+	@media screen and (max-width: 992px) {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
   align-items: center;
 `;
 

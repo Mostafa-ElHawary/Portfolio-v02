@@ -12,7 +12,8 @@ function App() {
       <Container inverse>
         <Main />
         <Introduction/>
-        <Technologies />
+         <Technologies />
+
       </Container>
     </Router>
   );
