@@ -10,13 +10,7 @@ export const BodyStyles = css`
     color: #fff;
     font-family: "Inter", "DM Sans", Arial, sans-serif;
   }
-`;
 
-export const MainContainer = styled.main`
-  height: 100vh;
-  display: grid;
-  align-items: center;
-  
   :root {
     --bg:#0A182E;
     --clr-1: #00c2ff;
@@ -28,8 +22,13 @@ export const MainContainer = styled.main`
     --fs: clamp(3rem, 8vw, 7rem);
     --ls: clamp(-1.75px, -0.25vw, -3.5px);
   }
-  
 
+`;
+
+export const MainContainer = styled.main`
+  height: 100vh;
+  display: grid;
+  align-items: center;
   
 `;
 export const LandingContainer = styled.div``;

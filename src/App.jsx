@@ -4,13 +4,13 @@ import Introduction from "./Component/Introduction/Introduction";
 import Technologies from "./Component/Technologies/Technologies";
 import GlobalStyle, { Container } from "../GlobalStyle";
 import { BrowserRouter as Router } from "react-router-dom";
-import  BodyStyles  from "./Component/Main/MainStyle";
+// import  BodyStyles  from "./Component/Main/MainStyle";
 
 function App() {
   return (
     <Router>
       <GlobalStyle />
-      <BodyStyles />
+   
       <Container inverse>
         <Main />
         <Introduction/>
