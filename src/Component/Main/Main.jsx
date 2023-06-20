@@ -7,6 +7,9 @@ import {
   TitleWrapper,
   LandingbioWrapper,
   GreenlinkWrapper,
+  ContentWrapper ,
+  AuroraWrapper,
+  AuroraItem
 } from "./MainStyle";
 import "./aurora.css";
 
@@ -23,17 +26,17 @@ function Main() {
         // <h2 className="landing__heading">Mostafa El Hawary.</h2>
       }
 
-        <div className="content">
+        <ContentWrapper  className="content">
           <TitleWrapper className="title">
             I Build Stuff For The Web.
-            <div className="aurora">
-              <div className="aurora__item"></div>
-              <div className="aurora__item"></div>
-              <div className="aurora__item"></div>
-              <div className="aurora__item"></div>
-            </div>
+            <AuroraWrapper className="aurora">
+              <AuroraItem className="aurora__item"></AuroraItem>
+              <AuroraItem className="aurora__item"></AuroraItem>
+              <AuroraItem className="aurora__item"></AuroraItem>
+              <AuroraItem className="aurora__item"></AuroraItem>
+            </AuroraWrapper>
           </TitleWrapper>
-        </div>
+        </ContentWrapper>
         <LandingbioWrapper className="landing__bio">
         Experienced software developer dedicated to delivering high-quality code and enhancing user experiences. You can see my work on{" "}
           <GreenlinkWrapper

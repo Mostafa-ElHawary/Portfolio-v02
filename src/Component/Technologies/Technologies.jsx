@@ -93,8 +93,7 @@ function Technologies() {
         I have proficiency in C++ and Java for tackling complex programming
         challenges. I also have experience in machine learning and AI, adding an
         extra dimension to my skill set.
-        <br />
-        Here are a few technologies I&apos;ve been working with:
+  
       </Text>
 
   
