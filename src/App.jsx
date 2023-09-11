@@ -1,22 +1,14 @@
-import "./App.css";
-import Main from "./Component/Main/Main";
+import Head from "./Component/Head/Head";
 import Introduction from "./Component/Introduction/Introduction";
-import Technologies from "./Component/Technologies/Technologies";
-import GlobalStyle, { Container } from "../GlobalStyle";
-import { BrowserRouter as Router } from "react-router-dom";
-// import  BodyStyles  from "./Component/Main/MainStyle";
-
+import GlobalStyle from "./GlobalStyle";
 function App() {
   return (
-    <Router>
-      <GlobalStyle />
-   
-      <Container inverse>
-        <Main />
-        <Introduction/>
-         <Technologies />
-      </Container>
-    </Router>
+    <>
+    
+    <GlobalStyle/>
+    <Head/>
+    <Introduction/>
+    </>
   );
 }
 

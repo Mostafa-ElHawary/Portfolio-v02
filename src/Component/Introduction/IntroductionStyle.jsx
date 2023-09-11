@@ -1,30 +1,22 @@
 import styled, { css } from "styled-components";
+import { Container } from "../../GlobalStyle";
 
-export const WrapperAboutContainer = styled.div`
-  height: 100vh;
+export const IntroContainer = styled(Container)`
+  height: 50vh;
   display: grid;
   align-items: center;
 `;
 
 export const AboutContainer = styled.section`
-
-
- display: grid;
- row-gap: 30px;
+  display: grid;
+  row-gap: 30px;
   @media screen and (max-width: 768px) {
-
     grid-template-columns: [] 100%;
-
-   }
- @media screen and (min-width: 992px) {
-
-  grid-template-columns: [] 50% [] 50%;
-
- }
-// @media screen and (max-width: 1100px){}
-
-
-
+  }
+  @media screen and (min-width: 992px) {
+    grid-template-columns: [] 50% [] 50%;
+  }
+  // @media screen and (max-width: 1100px){}
 `;
 export const AboutmeH1 = styled.h1`
   margin-bottom: clamp(10px, 2vw, 20px);
@@ -66,17 +58,15 @@ export const Section = styled.section`
   box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px;
 
   ${css`
-  
-   p {
-    font-size: clamp(.8rem, 1vw, 1.5rem);
-    color: hsl(219, 14%, 63%);
-    line-height: 1.5rem;
-   }
+    p {
+      font-size: clamp(0.8rem, 1vw, 1.5rem);
+      color: hsl(219, 14%, 63%);
+      line-height: 1.5rem;
+    }
 
-   a{
-    font-size: clamp(.7rem, 1vw, 1.5rem);
-    cursor: pointer;
-   }
-
+    a {
+      font-size: clamp(0.7rem, 1vw, 1.5rem);
+      cursor: pointer;
+    }
   `}
 `;

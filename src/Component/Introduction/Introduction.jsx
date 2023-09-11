@@ -3,17 +3,25 @@
 // Next image optimization
 // import Image from "next/image";
 // import Technology from "@/components/Technology";
-import { WrapperAboutContainer,  AboutContainer, AboutmeH1, ContentBioP , Section , WrapperSection } from "./IntroductionStyle";
+import {
+    IntroContainer,
+  // AboutContainer,
+  AboutmeH1,
+  ContentBioP,
+  WrapperSection,
+  Section,
+} from "./IntroductionStyle";
+import { MainSection } from "../../GlobalStyle";
 function Introduction() {
   return (
-    <WrapperAboutContainer className="about" id="about">
-      <AboutContainer className="about__container">
-        <div className="content">
-          <AboutmeH1 className="about__heading about__heading--section-heading">
+    <MainSection>
+      <IntroContainer inverse>
+        <div >
+          <AboutmeH1 >
             Introduction
           </AboutmeH1>
 
-          <div className="content__bio">
+          <div >
             <ContentBioP>
               Hello! My name is Mostafa El Hawary, I&apos;m{" "}
               {new Date().getFullYear() - new Date("1995-04-06").getFullYear()}{" "}
@@ -21,17 +29,14 @@ function Introduction() {
               programming by taking Data Structure & Algorithmes course when I
               decided to learn how to code and make stuff out of the box. I
               started to think about the internet and how it works, so I focused
-              on web development (especially Full-stack) and doing my best here.
-              I continuously strive to enhance my expertise, tackling design
-              challenges and solving problems one project at a time. If you're
-              looking for a full-stack software developer or a mobile app
-              developer, you've come to the right place!
+              on web development (especially Full-stack) and doing my best here
+              . If you're looking for a full-stack software developer or a
+              mobile app developer, you've come to the right place!
             </ContentBioP>
           </div>
         </div>
 
         <WrapperSection>
-
           <Section>
             <section>
               <h3>Front End</h3>
@@ -55,17 +60,18 @@ function Introduction() {
             </section>
             <p>
               {" "}
-              Developing secure and high-performance systems with proficiency in using top frameworks.
+              Developing secure and high-performance systems with proficiency in
+              using top frameworks.
             </p>
             <span>
               {" "}
               <a>MORE PROJECTS</a>{" "}
             </span>
           </Section>
-
         </WrapperSection>
-      </AboutContainer>
-    </WrapperAboutContainer>
+
+      </IntroContainer>
+    </MainSection>
   );
 }
 export default Introduction;
