@@ -1,13 +1,17 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    reactStrictMode: true,
+    // reactStrictMode: true,
     images :{
-      domains : [
-        "links.papareact.com",
-        "platform-lookaside.fbsbx.com",
-        "firebasestorage.googleapis.com"
-      ]
-    }
+      remotePatterns: [
+        {
+          protocol: "https",
+          hostname: "images.unsplash.com",
+        },
+      ],
+    },
+    experimental: {
+      serverActions: true,
+    },
   }
   
   module.exports = nextConfig
