@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export default function Intro() {
   return (
-    <section className="mb-28 max-w-[100rem] text-center sm:mb-0 scroll-mt-[100rem]">
+    <section className="mb-28  text-center sm:mb-0 scroll-mt-[100rem]">
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
