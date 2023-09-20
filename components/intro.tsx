@@ -57,7 +57,7 @@ export default function Intro() {
         <span className="font-bold">2 years</span> of experience.
       </motion.h1>
       <motion.h5
-        className="mb-10 px-4 text-2xl font-medium !leading-[1.5] sm:text-1xl"
+        className="mb-10 px-4 text-2xl font-medium !leading-[1.5] sm:text-1xl text-gray-950"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >

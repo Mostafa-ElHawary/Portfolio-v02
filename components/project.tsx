@@ -17,8 +17,8 @@ export default function Project({
     target: ref,
     offset: ["0 1", "1.33 1"],
   });
- const scrollProgress = useTransform(scrollYProgress , [0,1],[0.8,1])
- const scrollOpacity = useTransform(scrollYProgress , [0,1],[0.6,1])
+  const scrollProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
+  const scrollOpacity = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
   return (
     <motion.div
