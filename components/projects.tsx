@@ -10,23 +10,25 @@ import { useActiveSectionContext } from "@/context/active-section-context";
 import { useInView } from "react-intersection-observer";
 
 export default function project() {
-  const { ref, inView } = useInView();
+  const { ref, inView } = useInView({
+    threshold: 0.5,
+  });
 
-  const { setActiveSection } = useActiveSectionContext();
+  const { setActiveSection , timeOfLastClick } = useActiveSectionContext();
 
   useEffect(() => {
-    if (inView) {
+    if (inView  && Date.now() - timeOfLastClick > 1000) {
       setActiveSection("Projects");
     }
-  }, [inView, setActiveSection]);
+  }, [inView, setActiveSection , timeOfLastClick]);
   return (
     <motion.section
+      ref={ref}
       className="mb-28 max-w-[45rem] text-center leading-8  scroll-mt-28"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
       id="projects"
-      ref={ref}
     >
       <SectionHeading>Some Things I've Built</SectionHeading>
       <div>

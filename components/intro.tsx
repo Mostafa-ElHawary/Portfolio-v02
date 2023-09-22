@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import portfolio from "@/public/Portfolio2.png";
 import { motion } from "framer-motion";
@@ -12,12 +12,22 @@ import { useInView } from "react-intersection-observer";
 import Link from "next/link";
 import { useActiveSectionContext } from "@/context/active-section-context";
 export default function Intro() {
+  const { ref, inView } = useInView({
+    threshold:0.1
+  });
 
+  const { setActiveSection , timeOfLastClick} = useActiveSectionContext();
+
+  useEffect(() => {
+    if (inView && Date.now() - timeOfLastClick > 1000) {
+      setActiveSection("Home");
+    }
+  }, [inView, setActiveSection , timeOfLastClick]);
   return (
     <section
-      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem] "
+    ref={ref}
+      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]  "
       id="home"
-
     >
       <div className="flex items-center justify-center">
         <div className="relative">
@@ -36,7 +46,7 @@ export default function Intro() {
               height="192"
               quality="70"
               priority={true}
-              className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+              className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white border-opacity-30 shadow-xl"
             ></Image>
             <motion.span
               className="absolute bottom-1 right-1 text-2xl"
@@ -82,7 +92,7 @@ export default function Intro() {
       >
         <Link
           href="#contact"
-          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+          className="group bg-gray-900  text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
         >
           Contact me here{" "}
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />

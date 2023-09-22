@@ -8,6 +8,8 @@ type ActiveSectionContextProviderProps = {
 type ActiveSectionContextType = {
   activeSection: linksOfSectionsType;
   setActiveSection: React.Dispatch<React.SetStateAction<linksOfSectionsType>>;
+  timeOfLastClick: number;
+  setTimeOfLastClick: React.Dispatch<React.SetStateAction<number>>;
 };
 export const ActiveSectionContext =
   createContext<ActiveSectionContextType | null>(null);
@@ -16,8 +18,16 @@ export default function ActiveSectionContextProvider({
 }: ActiveSectionContextProviderProps) {
   const [activeSection, setActiveSection] =
     useState<linksOfSectionsType>("Home");
+  const { timeOfLastClick, setTimeOfLastClick } = useState(0);
   return (
-    <ActiveSectionContext.Provider value={{ activeSection, setActiveSection }}>
+    <ActiveSectionContext.Provider
+      value={{
+        activeSection,
+        setActiveSection,
+        timeOfLastClick,
+        setTimeOfLastClick,
+      }}
+    >
       {children}
     </ActiveSectionContext.Provider>
   );
