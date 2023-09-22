@@ -1,21 +1,22 @@
 /* eslint-disable react/no-unescaped-entities */
 "use client";
 
-import React  from "react";
+import React, { useEffect } from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
-import  {useInView } from "react-intersection-observer"
+import { useInView } from "react-intersection-observer";
 import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function About() {
-  const { ref , inView} = useInView();
+  const { ref, inView } = useInView();
 
- const {setActiveSection} = useActiveSectionContext()
+  const { setActiveSection } = useActiveSectionContext();
 
- if(inView)
- {
-  setActiveSection("About")
- }
+  useEffect(() => {
+    if (inView) {
+      setActiveSection("About");
+    }
+  }, [inView, setActiveSection]);
   return (
     <motion.section
       ref={ref}
@@ -28,8 +29,8 @@ export default function About() {
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
         After graduating with a degree in{" "}
-        <span className="font-medium">law</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
+        <span className="font-medium">law</span>, I decided to pursue my passion
+        for programming. I enrolled in a coding bootcamp and learned{" "}
         <span className="font-medium">full-stack web development</span>.{" "}
         <span className="italic">My favorite part of programming</span> is the
         problem-solving aspect. I <span className="underline">love</span> the
@@ -38,10 +39,8 @@ export default function About() {
         <span className="font-medium">
           React, Next.js, Node.js, and MongoDB
         </span>
-        . I am also familiar with TypeScript and Express.js . 
+        . I am also familiar with TypeScript and Express.js .
       </p>
-
-     
     </motion.section>
   );
 }
