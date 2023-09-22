@@ -1,5 +1,5 @@
 "use client";
-import React, { useContext, useState , createContext} from "react";
+import React, { useContext, useState, createContext } from "react";
 import { links } from "@/lib/data";
 type linksOfSectionsType = (typeof links)[number]["name"];
 type ActiveSectionContextProviderProps = {
@@ -9,9 +9,8 @@ type ActiveSectionContextType = {
   activeSection: linksOfSectionsType;
   setActiveSection: React.Dispatch<React.SetStateAction<linksOfSectionsType>>;
 };
-export const ActiveSectionContext = createContext<ActiveSectionContextType | null>(
-  null
-);
+export const ActiveSectionContext =
+  createContext<ActiveSectionContextType | null>(null);
 export default function ActiveSectionContextProvider({
   children,
 }: ActiveSectionContextProviderProps) {
@@ -23,11 +22,11 @@ export default function ActiveSectionContextProvider({
     </ActiveSectionContext.Provider>
   );
 }
-export function useActiveSectionContext(){
-    const context= useContext(ActiveSectionContext);
+export function useActiveSectionContext() {
+  const context = useContext(ActiveSectionContext);
 
-    if(context === null){
-        throw new Error("No Context found") ;
-    }
-    return context
+  if (context === null) {
+    throw new Error("No Context found");
+  }
+  return context;
 }
