@@ -9,7 +9,7 @@ import Project from "./project";
 import { useSectionInviwe } from "@/lib/hooks";
 
 export default function project() {
-  const { ref } = useSectionInviwe("Projects", 0.75);
+  const { ref } = useSectionInviwe("Projects", 0.50);
   return (
     <motion.section
       ref={ref}
