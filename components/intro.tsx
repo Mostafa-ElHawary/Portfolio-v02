@@ -11,7 +11,7 @@ import { useSectionInviwe } from "@/lib/hooks";
 import Link from "next/link";
 
 export default function Intro() {
-  const { ref } = useSectionInviwe("Home" , 0.1)
+  const { ref } = useSectionInviwe("Home", 0.1);
 
   return (
     <section
