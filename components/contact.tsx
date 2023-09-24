@@ -4,11 +4,16 @@ import SectionHeading from "./section-heading";
 import { FaPaperPlane } from "react-icons/fa";
 import { useSectionInviwe } from "@/lib/hooks";
 import { motion } from "framer-motion";
+import { sendEmail } from "@/actions/sendEmail";
 export default function Contact() {
   const { ref } = useSectionInviwe("Contact", 0.75);
 
   return (
-    <motion.section ref={ref} id="contact" className="mb-20 sm:mb-28 w-[(100% , 38rem)] "  initial={{
+    <motion.section
+      ref={ref}
+      id="contact"
+      className="mb-20 sm:mb-28 w-[(100% , 38rem)] "
+      initial={{
         opacity: 0,
       }}
       whileInView={{
@@ -19,7 +24,8 @@ export default function Contact() {
       }}
       viewport={{
         once: true,
-      }}>
+      }}
+    >
       <SectionHeading>Contact me</SectionHeading>
       <p className="text-gray-700">
         Please contact me directly at{" "}
@@ -32,17 +38,27 @@ export default function Contact() {
         </a>{" "}
         or through this form.
       </p>
-      <form className="mt-10 flex flex-col dark:text-black">
+      <form
+        className="mt-10 flex flex-col dark:text-black"
+        action={async (formData)=>{
+            await sendEmail(formData)
+        }}
+      >
         <input
-        placeholder="Your email"
+          name="senderEmail"
+          required
+          maxLength={200}
+          placeholder="Your email"
           type="email"
-          className="borderBlack h-14 rounded-lg dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          className=" p-4 borderBlack h-14 rounded-lg dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
         />
         <textarea
+
           className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           name="message"
           placeholder="Your message"
           required
+          maxLength={500}
         />
         <button
           type="submit"
