@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import { useSectionInviwe } from "@/lib/hooks";
 
 export default function About() {
-  const { ref } = useSectionInviwe("About", 0.75);
+  const { ref } = useSectionInviwe("About", 0.70);
   return (
     <motion.section
       ref={ref}
