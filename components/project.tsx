@@ -36,7 +36,7 @@ export default function Project({
             {tags.map((tag, index) => (
               <li
                 key={tag}
-                className="border border-white border-opacity-90 borderBlack dark:bg-[#02493967] shadow-lg shadow-black/[0.03]  backdrop-blur-[0.5rem]  px-3 py-1 text-[0.7rem] uppercase tracking-wider text-gray-950 rounded-full dark:text-white/70"
+                className="border border-white  border-opacity-90  shadow-lg shadow-black/[0.03]  backdrop-blur-[0.5rem]  px-3 py-1 text-[0.7rem] uppercase tracking-wider text-gray-950 rounded-full dark:text-[#64ffda] dark:border-none"
               >
                 {tag}
               </li>

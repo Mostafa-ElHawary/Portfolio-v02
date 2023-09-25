@@ -29,7 +29,7 @@ export default function Contact() {
       }}
     >
       <SectionHeading>Get In Touch</SectionHeading>
-      <p className=" w-[30rem]  text-gray-700 text-center text-md ml-[10rem] mr-[10rem] dark:text-[#ccd6f6]">
+      <p className=" w-[30rem]  text-gray-700 text-center text-md ml-[10rem] mr-[10rem] dark:text-[#8892b0;]">
       My inbox is always open for you contact me directly at{" "}
         <a
           className="underline font-semibold dark:text-[#64ffda]"
@@ -59,10 +59,10 @@ export default function Contact() {
           maxLength={200}
           placeholder="Your email"
           type="email"
-          className="text-white p-4 borderBlack w-[30rem] h-14 rounded-lg dark:bg-gray-900  dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          className="text-white p-4  w-[30rem] h-14 rounded-lg borderGray dark:bg-[#0a192f]  dark:bg-opacity-80 dark:focus:bg-opacity-100 dark:border-[#ccd6f6] transition-all dark:outline-none"
         />
         <textarea
-          className="text-white borderBlack w-[30rem]  h-41 my-3 rounded-lg  p-4 dark:bg-gray-900 dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          className="text-white borderGray w-[30rem]  h-41 my-3 rounded-lg  p-4 dark:bg-[#0a192f] dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           name="message"
           placeholder="Your message"
           required
