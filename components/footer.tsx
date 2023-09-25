@@ -10,18 +10,14 @@ export default function Footer() {
         <span className="mb-2">
           Designed & Built by {" "}
           <a
-            className="underline"
+            className="underline font-semibold dark:text-[#64ffda]"
             href="https://web.facebook.com/profile.php?id=100004541353201
 "
           >
             Mostafa El Hawary
           </a>{" "}
         </span>
-        <span className="font-semibold">
-          About this website: built with React & Next.js (App Router & Server
-          Actions), TypeScript, Tailwind CSS, Framer Motion, React Email &
-          Resend, Vercel hosting.
-        </span>
+       
       </p>
     </footer>
   );

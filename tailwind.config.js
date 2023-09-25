@@ -17,3 +17,4 @@ module.exports = {
   plugins: [],
   darkMode: "class",
 }
+//dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90

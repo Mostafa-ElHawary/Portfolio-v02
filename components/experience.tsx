@@ -13,34 +13,34 @@ import { useSectionInviwe } from "@/lib/hooks";
 import { useTheme } from "@/context/theme-context";
 
 export default function Experience() {
-  const { ref } = useSectionInviwe("Experience",0.5);
-
+  const { ref } = useSectionInviwe("Experience", 0.5);
+  const { theme } = useTheme();
   return (
-    <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
+    <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40 ">
       <SectionHeading>My experience</SectionHeading>
       <VerticalTimeline lineColor="">
         {experiencesData.map((item, index) => (
           <React.Fragment key={index}>
             <VerticalTimelineElement
               contentStyle={{
-                // background:
-                //   theme === "light" ? "#f3f4f6" : "rgba(255, 255, 255, 0.05)",
+                background:
+                  theme === "light" ? "#f3f4f6" : "#02493827 ",
                 boxShadow: "none",
                 border: "1px solid rgba(0, 0, 0, 0.05)",
                 textAlign: "left",
                 padding: "1.3rem 2rem",
               }}
               contentArrowStyle={{
-                // borderRight:
-                //   theme === "light"
-                //     ? "0.4rem solid #9ca3af"
-                //     : "0.4rem solid rgba(255, 255, 255, 0.5)",
+                borderRight:
+                  theme === "light"
+                    ? "0.4rem solid #9ca3af"
+                    : "0.4rem solid #02493827",
               }}
               date={item.date}
               icon={item.icon}
               iconStyle={{
-                // background:
-                //   theme === "light" ? "white" : "rgba(255, 255, 255, 0.15)",
+                background:
+                  theme === "light" ? "white" : "#02493827",
                 fontSize: "1.5rem",
               }}
             >

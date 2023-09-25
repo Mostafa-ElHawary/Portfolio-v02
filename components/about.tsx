@@ -36,7 +36,7 @@ export default function About() {
               height="192"
               quality="70"
               priority={true}
-              className=" h-24 w-24 m-auto mb-8 rounded-full object-cover border-[0.35rem] border-white border-opacity-50 shadow-xl"
+              className=" h-24 w-24 m-auto mb-8 rounded-full object-cover border-[0.35rem] border-[#0249383b] border-opacity-90 shadow-xl"
             ></Image>
             <motion.span
               className="absolute bottom-10 right-1 text-2xl"
