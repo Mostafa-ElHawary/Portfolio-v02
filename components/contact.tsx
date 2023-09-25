@@ -28,9 +28,9 @@ export default function Contact() {
         once: true,
       }}
     >
-      <SectionHeading>Contact me</SectionHeading>
-      <p className="text-gray-700">
-        Please contact me directly at{" "}
+      <SectionHeading>Get In Touch</SectionHeading>
+      <p className="text-gray-700 text-center text-xs">
+      My inbox is always open for you contact me directly at{" "}
         <a
           className="underline"
           href="mailto:alhwarymostafa@gmail.com
@@ -62,7 +62,7 @@ export default function Contact() {
           className=" p-4 borderBlack h-14 rounded-lg dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
         />
         <textarea
-          className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          className="h-14 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           name="message"
           placeholder="Your message"
           required
