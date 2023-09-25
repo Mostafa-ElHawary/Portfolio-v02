@@ -24,7 +24,7 @@ export default function Experience() {
             <VerticalTimelineElement
               contentStyle={{
                 background:
-                  theme === "light" ? "#f3f4f6" : "#02493827 ",
+                  theme === "light" ? "#f3f4f6" : "#45575326 ",
                 boxShadow: "none",
                 border: "1px solid rgba(0, 0, 0, 0.05)",
                 textAlign: "left",

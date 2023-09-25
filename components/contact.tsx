@@ -29,7 +29,7 @@ export default function Contact() {
       }}
     >
       <SectionHeading>Get In Touch</SectionHeading>
-      <p className="text-gray-700 text-center text-md ml-4 mr-4 dark:text-white ">
+      <p className=" w-[30rem]  text-gray-700 text-center text-md ml-[10rem] mr-[10rem] dark:text-[#ccd6f6]">
       My inbox is always open for you contact me directly at{" "}
         <a
           className="underline font-semibold dark:text-[#64ffda]"
@@ -41,7 +41,7 @@ export default function Contact() {
         or through this form.
       </p>
       <form
-        className="mt-10 flex flex-col dark:text-black "
+        className="mt-10 flex flex-col dark:text-black items-center"
         action={async (formData) => {
           const { data, error } = await sendEmail(formData);
 
@@ -59,10 +59,10 @@ export default function Contact() {
           maxLength={200}
           placeholder="Your email"
           type="email"
-          className="text-white p-4 borderBlack h-14 rounded-lg dark:bg-gray-900  dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          className="text-white p-4 borderBlack w-[30rem] h-14 rounded-lg dark:bg-gray-900  dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
         />
         <textarea
-          className="text-white  h-14 my-3 rounded-lg borderBlack p-4 dark:bg-gray-900 dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          className="text-white borderBlack w-[30rem]  h-41 my-3 rounded-lg  p-4 dark:bg-gray-900 dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           name="message"
           placeholder="Your message"
           required
