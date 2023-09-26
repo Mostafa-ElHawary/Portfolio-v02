@@ -30,15 +30,15 @@ export default function Intro() {
         <span className="font-bold">Software Engineer</span> with{" "}
         <span className="font-bold">2 years</span> of experience.
       </motion.h1>
-      <motion.h5
-        className="mb-10 px-4 text-2xl font-medium !leading-[1.5] sm:text-1xl "
+      <motion.h2
+        className="mb-10 px-4 text-2xl font-medium !leading-[1.5] sm:text-3xl "
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        I'm focusing on improving my skills and knowledge. You can see my work
-        on <span className="font-bold text-white cursor-pointer">GitHub </span>for more details.{" "}
+        <span className="font-bold">I Build Stuff For The Web. You</span> can see my work
+        on <span className="font-bold text-white cursor-pointer dark:text-[#64ffda]">GitHub </span>for more details.{" "}
         <span className="font-bold">Have a nice day!</span>{" "}
-      </motion.h5>
+      </motion.h2>
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
         initial={{ opacity: 0, y: 100 }}

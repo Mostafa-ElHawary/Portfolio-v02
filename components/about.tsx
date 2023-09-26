@@ -12,13 +12,15 @@ export default function About() {
   return (
     <motion.section
       ref={ref}
-      className=" flex flex-col mb-28 max-w-[45rem] text-center leading-8  scroll-mt-28"
+      className="relative flex flex-col mb-28 max-w-[45rem] text-center leading-8  scroll-mt-28"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
       id="about"
     >
       <SectionHeading>About me</SectionHeading>
+
+      <div className="bg-[#7984c4] absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-[#173027]"></div>
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
