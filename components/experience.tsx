@@ -16,8 +16,12 @@ export default function Experience() {
   const { ref } = useSectionInviwe("Experience", 0.5);
   const { theme } = useTheme();
   return (
-    <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40 ">
+    <section id="experience" ref={ref} className="relative scroll-mt-28 mb-28 sm:mb-40 ">
       <SectionHeading>My experience</SectionHeading>
+      <div className="bg-[#994985bc] absolute top-[-20rem] -z-10 right-[5rem] h-[31.25rem] w-[41.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:right-[33rem] lg:right-[28rem] xl:right-[15rem] 2xl:right-[10rem]  dark:bg-[	#301720] -rotate-[30deg]
+
+"></div>
+
       <VerticalTimeline lineColor="">
         {experiencesData.map((item, index) => (
           <React.Fragment key={index}>

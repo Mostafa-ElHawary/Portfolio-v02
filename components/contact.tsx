@@ -14,7 +14,7 @@ export default function Contact() {
     <motion.section
       ref={ref}
       id="contact"
-      className="mb-20 sm:mb-28 w-[(100% , 38rem)] "
+      className="mb-20 sm:mb-28 w-[(100% , 38rem)] relative"
       initial={{
         opacity: 0,
       }}
@@ -29,6 +29,8 @@ export default function Contact() {
       }}
     >
       <SectionHeading>Get In Touch</SectionHeading>
+            <div className="bg-[#7984c4] absolute bottom-[-1rem] -z-10 right-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:right-[-33rem] lg:right-[-28rem] xl:right-[-15rem] 2xl:right-[-5rem] dark:bg-[#173027]"></div>
+
       <p className=" w-[30rem]  text-gray-700 text-center text-md ml-[10rem] mr-[10rem] dark:text-[#8892b0;]">
       My inbox is always open for you contact me directly at{" "}
         <a
