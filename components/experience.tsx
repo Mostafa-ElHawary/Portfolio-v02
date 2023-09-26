@@ -16,19 +16,24 @@ export default function Experience() {
   const { ref } = useSectionInviwe("Experience", 0.5);
   const { theme } = useTheme();
   return (
-    <section id="experience" ref={ref} className="relative scroll-mt-28 mb-28 sm:mb-40 ">
+    <section
+      id="experience"
+      ref={ref}
+      className="relative scroll-mt-28 mb-28 sm:mb-40 "
+    >
       <SectionHeading>My experience</SectionHeading>
-      <div className="bg-[#994985bc] absolute top-[-25rem] -z-10 right-[5-20rem] h-[31.25rem] w-[41.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:right-[-25rem] lg:right-[8rem] xl:right-[40rem] 2xl:right-[10rem]  dark:bg-[	#301720] -rotate-[30deg]
+      <div
+        className="bg-[#994985bc] absolute top-[-25rem] -z-10 right-[5-20rem] h-[31.25rem] w-[41.25rem] rounded-full bg-gradient-to-r from-indigo-600 blur-[10rem] sm:w-[68.75rem] md:right-[-25rem] lg:right-[8rem] xl:right-[40rem] 2xl:right-[10rem]  dark:bg-[	#301720] -rotate-[30deg]
 
-"></div>
+"
+      ></div>
 
       <VerticalTimeline lineColor="">
         {experiencesData.map((item, index) => (
           <React.Fragment key={index}>
             <VerticalTimelineElement
               contentStyle={{
-                background:
-                  theme === "light" ? "#f3f4f6" : "#45575326 ",
+                background: theme === "light" ? "#f3f4f6" : "#45575326 ",
                 boxShadow: "none",
                 border: "1px solid rgba(0, 0, 0, 0.05)",
                 textAlign: "left",
@@ -43,8 +48,7 @@ export default function Experience() {
               date={item.date}
               icon={item.icon}
               iconStyle={{
-                background:
-                  theme === "light" ? "white" : "#02493827",
+                background: theme === "light" ? "white" : "#02493827",
                 fontSize: "1.5rem",
               }}
             >
@@ -57,6 +61,11 @@ export default function Experience() {
           </React.Fragment>
         ))}
       </VerticalTimeline>
+      {/* <div
+        className="bg-[#994985bc] absolute top-[27rem] -z-10 right-[-20rem] h-[31.25rem] w-[41.25rem] rounded-full bg-gradient-to-r from-indigo-600 blur-[20rem] sm:w-[68.75rem] md:right-[-25rem] lg:right-[8rem] xl:right-[40rem] 2xl:right-[10rem]  dark:bg-[	#301720] -rotate-[30deg]
+
+"
+      ></div> */}
     </section>
   );
 }

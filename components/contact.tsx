@@ -61,10 +61,10 @@ export default function Contact() {
           maxLength={200}
           placeholder="Your email"
           type="email"
-          className="text-white p-4  w-[30rem] h-14 rounded-lg borderGray dark:bg-[#0a192f]  dark:bg-opacity-80 dark:focus:bg-opacity-100 dark:border-[#ccd6f6] transition-all dark:outline-none"
+          className="text-white p-4  w-[30rem] h-14 rounded-lg border-2 border-teal-900 dark:bg-[#0a192f]  dark:bg-opacity-80 dark:focus:bg-opacity-100 dark:border-[#ccd6f6] transition-all dark:outline-none"
         />
         <textarea
-          className="text-white borderGray w-[30rem]  h-41 my-3 rounded-lg  p-4 dark:bg-[#0a192f] dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          className="text-white  w-[30rem]  h-41 my-3 rounded-lg border-2 border-teal-900  p-4 dark:bg-[#0a192f] dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           name="message"
           placeholder="Your message"
           required
