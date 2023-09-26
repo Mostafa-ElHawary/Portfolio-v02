@@ -29,7 +29,7 @@ export default function Contact() {
       }}
     >
       <SectionHeading>Get In Touch</SectionHeading>
-            <div className="bg-[#7984c4] absolute bottom-[-10rem] -z-10 right-[-15rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:right-[-33rem] lg:right-[-28rem] xl:right-[-15rem] 2xl:right-[-5rem] dark:bg-[#173027]"></div>
+            <div className="bg-[#7984c4] absolute bottom-[12rem] -z-10 right-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:right-[-33rem] lg:right-[-28rem] xl:right-[-15rem] 2xl:right-[-5rem] dark:bg-[#173027]"></div>
 
       <p className=" w-[30rem]  text-gray-700 text-center text-md ml-[10rem] mr-[10rem] dark:text-[#8892b0;]">
       My inbox is always open for you contact me directly at{" "}
@@ -61,7 +61,7 @@ export default function Contact() {
           maxLength={200}
           placeholder="Your email"
           type="email"
-          className="text-white p-4  w-[30rem] h-14 rounded-lg border-2 border-teal-900 dark:bg-[#0a192f]  dark:bg-opacity-80 dark:focus:bg-opacity-100 dark:border-[#ccd6f6] transition-all dark:outline-none"
+          className="text-white p-4  w-[30rem] h-14 rounded-lg border-2 border-teal-900 dark:bg-[#0a192f]  dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
         />
         <textarea
           className="text-white  w-[30rem]  h-41 my-3 rounded-lg border-2 border-teal-900  p-4 dark:bg-[#0a192f] dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
