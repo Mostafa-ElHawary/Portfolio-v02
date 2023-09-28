@@ -46,12 +46,12 @@ export default function Contact() {
         className="mt-10 flex flex-col dark:text-black  justify-center items-center max-w-[100%]"
         action={async (formData) => {
 
-          const { data, error } = await sendEmail(formData);
+          // const {data , error }  = await sendEmail(formData)  ;
 
-          if (error) {
-            toast.error(error);
-            return;
-          }
+          // if (error) {
+          //   toast.error(error);
+          //   return;
+          // }
 
           toast.success("Email sent successfully!");
         }}
