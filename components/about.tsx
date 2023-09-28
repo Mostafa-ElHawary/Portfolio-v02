@@ -12,7 +12,7 @@ export default function About() {
   return (
     <motion.section
       ref={ref}
-      className="relative flex flex-col mb-28 max-w-[45rem] text-center leading-8 scroll-mt-28"
+      className="relative flex flex-col items-center mb-28 max-w-[45rem] text-center leading-8 scroll-mt-28"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
@@ -20,10 +20,10 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
 
-      {/* <div className="bg-[#7984c4] absolute top-[5rem] -z-10 left-[-30rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-50rem] xl:left-[-35rem] 2xl:left-[-40rem] dark:bg-[#173027]"></div>
-      <div className="bg-[#7984c4] absolute top-[5rem] -z-10 left-[-30rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[25rem] xl:left-[-35rem] 2xl:left-[-40rem] dark:bg-[#173027]"></div> */}
+      <div className="bg-[#7984c4] absolute top-[5rem] -z-10 left-[-30rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-50rem] xl:left-[-35rem] 2xl:left-[-40rem] dark:bg-[#173027]"></div>
+      <div className="bg-[#7984c4] absolute top-[5rem] -z-10 left-[-30rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[25rem] xl:left-[-35rem] 2xl:left-[-40rem] dark:bg-[#173027]"></div>
 
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-center leading-relaxed text-gray-700">
         <div className="relative ">
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
@@ -59,7 +59,7 @@ export default function About() {
         </div>
       </div>
 
-      <p className="mb-3 font-semibold !leading-[2]  ">
+      <p className="mb-3 font-semibold !leading-[2]  text-gray-800">
         After graduating with a degree in{" "}
         <span className="underline ">law</span>, I decided to pursue my passion
         for programming. I enrolled in a coding bootcamp and learned{" "}

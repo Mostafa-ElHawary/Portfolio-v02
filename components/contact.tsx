@@ -29,9 +29,9 @@ export default function Contact() {
       }}
     >
       <SectionHeading>Get In Touch</SectionHeading>
-            {/* <div className="bg-[#7984c4] absolute bottom-[12rem] -z-10 right-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:right-[-33rem] lg:right-[-28rem] xl:right-[-15rem] 2xl:right-[-5rem] dark:bg-[#173027]"></div> */}
+            <div className="bg-[#7984c4] absolute bottom-[12rem] -z-10 right-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:right-[-33rem] lg:right-[-28rem] xl:right-[-15rem] 2xl:right-[-5rem] dark:bg-[#173027]"></div>
 
-      <p className=" md:w-[30rem] w-[25rem]  text-gray-700 text-center text-md ml-[10rem] mr-[10rem] dark:text-[#8892b0;]">
+      <p className=" md:w-[20rem] w-[25rem]  text-xs md:text-md text-gray-700 text-center text-md ml-[10rem] mr-[10rem] dark:text-[#8892b0]">
       My inbox is always open for you contact me directly at{" "}
         <a
           className="underline font-semibold dark:text-[#64ffda]"
