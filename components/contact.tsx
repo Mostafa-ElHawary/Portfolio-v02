@@ -31,7 +31,7 @@ export default function Contact() {
       <SectionHeading>Get In Touch</SectionHeading>
             {/* <div className="bg-[#7984c4] absolute bottom-[12rem] -z-10 right-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:right-[-33rem] lg:right-[-28rem] xl:right-[-15rem] 2xl:right-[-5rem] dark:bg-[#173027]"></div> */}
 
-      <p className=" w-[30rem]  text-gray-700 text-center text-md ml-[10rem] mr-[10rem] dark:text-[#8892b0;]">
+      <p className=" md:w-[30rem] w-[25rem]  text-gray-700 text-center text-md ml-[10rem] mr-[10rem] dark:text-[#8892b0;]">
       My inbox is always open for you contact me directly at{" "}
         <a
           className="underline font-semibold dark:text-[#64ffda]"
@@ -57,7 +57,7 @@ export default function Contact() {
         }}
       >
         <input
-          className="h-14 px-4 w-[30rem] rounded-lg border border-white dark:borderBlack dark:bg-[#0a192f] dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          className="h-14 px-4 md:w-[30rem]   w-[25rem]  rounded-lg border border-white dark:borderBlack dark:bg-[#0a192f] dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           name="senderEmail"
           type="email"
           required
@@ -65,7 +65,7 @@ export default function Contact() {
           placeholder="Your email"
         />
         <textarea
-          className="h-41 my-3  w-[30rem]  rounded-lg border border-white   dark:borderBlack p-4 dark:bg-[#0a192f] dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          className="h-41 my-3  md:w-[30rem]   w-[25rem]  rounded-lg border border-white   dark:borderBlack p-4 dark:bg-[#0a192f] dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           name="message"
           placeholder="Your message"
           required
