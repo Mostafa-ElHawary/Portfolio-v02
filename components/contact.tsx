@@ -14,7 +14,7 @@ export default function Contact() {
     <motion.section
       ref={ref}
       id="contact"
-      className="mb-20 sm:mb-28 w-[(100% , 38rem)] relative"
+      className="flex flex-col mb-20 sm:mb-28 w-[(100% , 38rem)]  text-center items-center"
       initial={{
         opacity: 0,
       }}
@@ -29,7 +29,7 @@ export default function Contact() {
       }}
     >
       <SectionHeading>Get In Touch</SectionHeading>
-            <div className="bg-[#7984c4] absolute bottom-[12rem] -z-10 right-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:right-[-33rem] lg:right-[-28rem] xl:right-[-15rem] 2xl:right-[-5rem] dark:bg-[#173027]"></div>
+            {/* <div className="bg-[#7984c4] absolute bottom-[12rem] -z-10 right-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:right-[-33rem] lg:right-[-28rem] xl:right-[-15rem] 2xl:right-[-5rem] dark:bg-[#173027]"></div> */}
 
       <p className=" w-[30rem]  text-gray-700 text-center text-md ml-[10rem] mr-[10rem] dark:text-[#8892b0;]">
       My inbox is always open for you contact me directly at{" "}
@@ -43,8 +43,9 @@ export default function Contact() {
         or through this form.
       </p>
       <form
-        className="mt-10 flex flex-col dark:text-black items-center"
+        className="mt-10 flex flex-col dark:text-black  justify-center items-center max-w-[100%]"
         action={async (formData) => {
+
           const { data, error } = await sendEmail(formData);
 
           if (error) {
@@ -56,21 +57,20 @@ export default function Contact() {
         }}
       >
         <input
+          className="h-14 px-4 w-[30rem] rounded-lg border border-white dark:borderBlack dark:bg-[#0a192f] dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           name="senderEmail"
-          required
-          maxLength={200}
-          placeholder="Your email"
           type="email"
-          className="text-white p-4  w-[30rem] h-14 rounded-lg border-2 border-teal-900 dark:bg-[#0a192f]  dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          required
+          maxLength={500}
+          placeholder="Your email"
         />
         <textarea
-          className="text-white  w-[30rem]  h-41 my-3 rounded-lg border-2 border-teal-900  p-4 dark:bg-[#0a192f] dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          className="h-41 my-3  w-[30rem]  rounded-lg border border-white   dark:borderBlack p-4 dark:bg-[#0a192f] dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           name="message"
           placeholder="Your message"
           required
-          maxLength={500}
+          maxLength={5000}
         />
-     
         <SubmitBtn />
       </form>
     </motion.section>

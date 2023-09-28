@@ -22,11 +22,11 @@ export default function Experience() {
       className="relative scroll-mt-28 mb-28 sm:mb-40 "
     >
       <SectionHeading>My experience</SectionHeading>
-      <div
+      {/* <div
         className="bg-[#994985bc] absolute top-[-25rem] -z-10 right-[5-20rem] h-[31.25rem] w-[41.25rem] rounded-full bg-gradient-to-r from-indigo-600 blur-[10rem] sm:w-[68.75rem] md:right-[-25rem] lg:right-[8rem] xl:right-[40rem] 2xl:right-[10rem]  dark:bg-[	#301720] -rotate-[30deg]
 
 "
-      ></div>
+      ></div> */}
 
       <VerticalTimeline lineColor="">
         {experiencesData.map((item, index) => (
@@ -61,11 +61,7 @@ export default function Experience() {
           </React.Fragment>
         ))}
       </VerticalTimeline>
-      {/* <div
-        className="bg-[#994985bc] absolute top-[27rem] -z-10 right-[-20rem] h-[31.25rem] w-[41.25rem] rounded-full bg-gradient-to-r from-indigo-600 blur-[20rem] sm:w-[68.75rem] md:right-[-25rem] lg:right-[8rem] xl:right-[40rem] 2xl:right-[10rem]  dark:bg-[	#301720] -rotate-[30deg]
 
-"
-      ></div> */}
     </section>
   );
 }
