@@ -21,7 +21,7 @@ export default function About() {
       <SectionHeading>About me</SectionHeading>
 
       <div className="bg-[#7984c4] absolute top-[5rem] -z-10 left-[-30rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-50rem] xl:left-[-35rem] 2xl:left-[-40rem] dark:bg-[#173027]"></div>
-      <div className="bg-[#7984c4] absolute top-[5rem] -z-10 left-[-30rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[25rem] xl:left-[-35rem] 2xl:left-[-40rem] dark:bg-[#173027]"></div>
+      {/* <div className="bg-[#7984c4] absolute top-[5rem] -z-10 left-[-30rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[25rem] xl:left-[-35rem] 2xl:left-[-40rem] dark:bg-[#173027]"></div> */}
 
       <div className="flex items-center justify-center leading-relaxed text-gray-700">
         <div className="relative ">

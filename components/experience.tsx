@@ -43,7 +43,7 @@ export default function Experience() {
                 borderRight:
                   theme === "light"
                     ? "0.4rem solid #ffffff40"
-                    : "0.4rem solid #02493827",
+                    : "0.4rem solid #45575326",
               }}
               date={item.date}
               icon={item.icon}
