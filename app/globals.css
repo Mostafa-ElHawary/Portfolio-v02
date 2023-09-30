@@ -8,6 +8,10 @@ html{
 .borderBlack {
     @apply border border-[#64ffda]
 }
+html.dark{
+    --line-color:rgba(255,255,255,0.2)
+
+}
 
 
 .borderGray {

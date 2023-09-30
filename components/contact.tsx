@@ -14,7 +14,7 @@ export default function Contact() {
     <motion.section
       ref={ref}
       id="contact"
-      className="flex flex-col mb-20 sm:mb-28 w-[(100% , 38rem)]  text-center items-center"
+      className="flex flex-col relative  mb-20 sm:mb-28  max-w-[53rem]  text-center items-center  "
       initial={{
         opacity: 0,
       }}
@@ -29,9 +29,10 @@ export default function Contact() {
       }}
     >
       <SectionHeading>Get In Touch</SectionHeading>
-      {/* <div className="bg-[#7984c4] absolute bottom-[12rem] -z-10 right-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:right-[-33rem] lg:right-[-28rem] xl:right-[-15rem] 2xl:right-[-5rem] dark:bg-[#173027]"></div> */}
+      {/* <div className="  bg-[#7984c4] absolute bottom-[12rem] -z-10 right-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[0rem] sm:w-[68.75rem] md:right-[-33rem] lg:right-[-28rem] xl:right-[-15rem] 2xl:right-[-5rem] dark:bg-[#173027]"></div> */}
+      <div className="bg-[#7984c4] absolute bottom-[12rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-[#173027]"></div>
 
-      <p className=" md:w-[20rem] w-[25rem]  text-xs md:text-md text-gray-700 text-center text-md ml-[10rem] mr-[10rem] dark:text-[#8892b0]">
+      <p className="  text-xs md:text-md text-gray-700 text-center text-md  dark:text-[#8892b0]">
         My inbox is always open for you contact me directly at{" "}
         <a
           className="underline font-semibold dark:text-[#64ffda]"
@@ -43,7 +44,7 @@ export default function Contact() {
         or through this form.
       </p>
       <form
-        className="mt-10 flex flex-col dark:text-black  justify-center items-center max-w-[100%]"
+        className="mt-10 flex flex-col dark:text-black  justify-center items-center "
         action={async (formData) => {
           // const {data , error }  = await sendEmail(formData)  ;
 
