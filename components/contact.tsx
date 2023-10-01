@@ -30,7 +30,8 @@ export default function Contact() {
     >
       <SectionHeading>Get In Touch</SectionHeading>
       {/* <div className="  bg-[#7984c4] absolute bottom-[12rem] -z-10 right-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[0rem] sm:w-[68.75rem] md:right-[-33rem] lg:right-[-28rem] xl:right-[-15rem] 2xl:right-[-5rem] dark:bg-[#173027]"></div> */}
-      <div className="bg-[#7984c4] absolute bottom-[12rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-[#173027]"></div>
+      {/* <div className="bg-[#7984c4] absolute bottom-[10rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-[#173027]"></div> */}
+      <div className="bg-[#7984c4] absolute bottom-[10rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[-15rem] md:left-[-15rem] lg:left-[-20rem] xl:left-[-25rem] 2xl:left-[-35rem] dark:bg-[#0a192f] bg-gradient-to-r from-[#173027] "></div>
 
       <p className="  text-xs md:text-md text-gray-700 text-center text-md  dark:text-[#8892b0]">
         My inbox is always open for you contact me directly at{" "}

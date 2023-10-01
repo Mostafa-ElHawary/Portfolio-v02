@@ -22,11 +22,7 @@ export default function Experience() {
       className=" relative scroll-mt-28 mb-28 sm:mb-40 "
     >
       <SectionHeading>My experience</SectionHeading>
-      <div
-        className="bg-[#64ffda] absolute top-[-25rem] left-[-8rem] -z-10  h-[31.25rem] w-[41.25rem] rounded-full bg-gradient-to-r from-indigo-600 blur-[10rem] sm:w-[68.75rem] md:right-[-4rem] lg:right-[5rem] xl:right-[-10rem] 2xl:right-[-5rem]  dark:bg-[	#301720] -rotate-[145deg]
-
-"
-      ></div>
+    
 
       <VerticalTimeline lineColor="">
         {experiencesData.map((item, index) => (
