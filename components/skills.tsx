@@ -28,7 +28,7 @@ export default function Skills() {
     <section
       id="skills"
       ref={ref}
-      className="  flex flex-col  items-center  mb-28  scroll-mt-28 text-center sm:mb-40 mr-[5rem]   ml-[5rem] lg:mr-[15rem] lg:ml-[15rem] xl:mr-[20rem] xl:ml-[20rem]"
+      className="  flex flex-col  items-center  mb-28  scroll-mt-28 text-center sm:mb-40 mr-[1rem]   ml-[5rem] lg:mr-[15rem] lg:ml-[15rem] xl:mr-[20rem] xl:ml-[20rem]"
     >
       <SectionHeading >A few technologies I've been working with</SectionHeading>
       <ul className="flex flex-wrap justify-center gap-2 text-xs text-gray-800 ">
