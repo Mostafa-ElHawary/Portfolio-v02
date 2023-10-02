@@ -9,15 +9,15 @@ import Contact from "@/components/contact";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center px-4">
-      <Intro />
-      <Line />
-      <Experience />
-      <About />
-      <Projects />
+    <>
+      {/* <Intro /> */}
+      {/* <Line /> */}
+      {/* <Experience /> */}
+      {/* <About /> */}
+      {/* <Projects /> */}
       <Skills />
       <Contact/>
 
-    </main>
+    </>
   );
 }

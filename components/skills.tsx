@@ -28,13 +28,13 @@ export default function Skills() {
     <section
       id="skills"
       ref={ref}
-      className="flex flex-col  items-center  mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40 "
+      className="  flex flex-col  items-center  mb-28  scroll-mt-28 text-center sm:mb-40 "
     >
       <SectionHeading >A few technologies I've been working with</SectionHeading>
       <ul className="flex flex-wrap justify-center gap-2 text-xs text-gray-800 ">
         {skillsData.map((skill, index) => (
           <motion.li
-            className="bg-white  border border-white   dark:border-none rounded-xl px-5 py-3 dark:bg-[#45575326] dark:text-white/80"
+            className="text-clamp text-normal   font-mono bg-white  border border-white   dark:border-none rounded-xl px-5 py-3 dark:bg-[#45575326] dark:text-white/80"
             key={index}
             variants={fadeInAnimationVariants}
             initial="initial"

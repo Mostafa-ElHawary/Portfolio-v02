@@ -5,7 +5,7 @@ import React from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import { useSectionInviwe } from "@/lib/hooks";
-import portfolio from "@/public/Portfolio2.png";
+import portfolio from "@/public/Portfolio3.png";
 import Image from "next/image";
 export default function About() {
   const { ref } = useSectionInviwe("About", 0.7);
@@ -20,11 +20,11 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
 
-      <div className="bg-[#7984c4] absolute top-[5rem] -z-10 left-[-30rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-50rem] xl:left-[-35rem] 2xl:left-[-40rem] dark:bg-[#173027]"></div>
       {/* <div className="bg-[#7984c4] absolute top-[5rem] -z-10 left-[-30rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[25rem] xl:left-[-35rem] 2xl:left-[-40rem] dark:bg-[#173027]"></div> */}
+      {/* <div className="bg-[#7984c4] absolute top-[5rem] -z-10 left-[-30rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-50rem] xl:left-[-35rem] 2xl:left-[-40rem] dark:bg-[#173027]"></div> */}
 
       <div className="flex items-center justify-center leading-relaxed text-gray-700">
-        <div className="relative ">
+        <div className=" relative  ">
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -40,7 +40,7 @@ export default function About() {
               height="192"
               quality="70"
               priority={true}
-              className=" h-24 w-24 m-auto mb-8 rounded-full object-cover border-[0.35rem] border-[#7984c4] border-opacity-50  dark:border-[#0249383b] dark:border-opacity-90 shadow-xl"
+              className="h-24 w-24 m-auto mb-8 rounded-full object-cover border-[0.35rem] border-[#7984c4] border-opacity-50  dark:border-[#0249383b] dark:border-opacity-90 shadow-xl"
             ></Image>
             <motion.span
               className="absolute bottom-10 right-1 text-2xl"

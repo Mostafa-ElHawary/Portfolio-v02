@@ -5,7 +5,7 @@ type SectionHeading = {
 };
 export default function SectionHeading({ children }: SectionHeading) {
   return (
-    <h2 className="text-3xl font-medium capitalize mb-8 text-center md:w-[30rem] w-[25rem] m-auto">
+    <h2 className="elementCenter  font-medium capitalize mb-8 text-center  textResizeP1 font-mono ">
       {children}
     </h2>
   );

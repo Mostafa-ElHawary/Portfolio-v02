@@ -12,9 +12,14 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      fontSize: {
+        'clamp': ['clamp(13px, 1.2vw, 22px)', 'line-height'],
+      },
+      fontBut: {
+        'clampBut': ['clamp(14px, 1.1vw, 22px)', 'line-height'],
+      },
     },
   },
   plugins: [],
   darkMode: "class",
 }
-//dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90

@@ -2,18 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-html{
-    --line-color:#e5e7eb
+html {
+  --line-color: #e5e7eb;
 }
 .borderBlack {
-    @apply border border-[#64ffda]
+  @apply border border-[#64ffda];
 }
-html.dark{
-    --line-color:rgba(255,255,255,0.2)
-
+html.dark {
+  --line-color: rgba(255, 255, 255, 0.2);
 }
-
 
 .borderGray {
-    @apply border border-[#ccd6f6]
+  @apply border border-[#ccd6f6];
+}
+.textResizeP1 {
+  @apply text-2xl  sm:text-3xl md:text-4xl;
+}
+
+.elementCenter {
+  @apply flex flex-col justify-start items-center;
+}
+.inputResize {
+  @apply text-sm sm:text-3xl md:text-4xl lg:text-4xl;
 }

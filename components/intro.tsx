@@ -20,8 +20,8 @@ export default function Intro() {
       className=" mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem] relative "
       id="home"
     >
-      <div className=" absolute top-[10rem] left-[-3rem] -z-10  h-[10.25rem] w-[26.25rem] rounded-full bg-gradient-to-r from-indigo-500 to-emerald-500 blur-[10rem] sm:w-[50.75rem]  md:right-[-4rem] lg:right-5rem] xl:right-[-10rem] 2xl:right-[-5rem]  dark:bg-[	#301720] -rotate-[145deg]"></div>
-      <div className=" absolute top-[10rem] left-[-3rem] -z-10  h-[5.25rem] w-[26.25rem] rounded-full bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%  blur-[10rem] sm:w-[50.75rem] md:right-[-4rem] lg:right-[5rem] xl:right-[-10rem] 2xl:right-[-5rem]  dark:bg-[	#301720] -rotate-[45deg]"></div>
+      {/* <div className=" absolute top-[10rem] left-[-3rem] -z-10  h-[10.25rem] w-[26.25rem] rounded-full bg-gradient-to-r from-indigo-500 to-emerald-500 blur-[10rem] sm:w-[50.75rem]  md:right-[-4rem] lg:right-5rem] xl:right-[-10rem] 2xl:right-[-5rem]  dark:bg-[	#301720] -rotate-[145deg]"></div>
+      <div className=" absolute top-[10rem] left-[-3rem] -z-10  h-[5.25rem] w-[26.25rem] rounded-full bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%  blur-[10rem] sm:w-[50.75rem] md:right-[-4rem] lg:right-[5rem] xl:right-[-10rem] 2xl:right-[-5rem]  dark:bg-[	#301720] -rotate-[45deg]"></div> */}
       <motion.h1 
         className=" mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl  "
         initial={{ opacity: 0, y: 100 }}
