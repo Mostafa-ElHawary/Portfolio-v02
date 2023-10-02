@@ -18,6 +18,9 @@ module.exports = {
       fontBut: {
         'clampBut': ['clamp(14px, 1.1vw, 22px)', 'line-height'],
       },
+      fontSize: {
+        'fontintroName': ['clamp(10px, 1vw, 20px)', 'line-height'],
+      },
     },
   },
   plugins: [],

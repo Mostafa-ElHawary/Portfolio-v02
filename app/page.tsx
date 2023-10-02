@@ -10,11 +10,13 @@ import Contact from "@/components/contact";
 export default function Home() {
   return (
     <main className="px-4">
-      {/* <Intro /> */}
-      {/* <Line /> */}
-      {/* <Experience /> */}
+      <Intro />
+      <Line />
+      <Experience />
       <About />
+      <Line />
       <Projects />
+      <Line />
       <Skills />
       <Contact/>
 

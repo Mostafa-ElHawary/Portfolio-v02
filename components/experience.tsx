@@ -19,7 +19,7 @@ export default function Experience() {
     <section
       id="experience"
       ref={ref}
-      className=" relative scroll-mt-28 mb-28 sm:mb-40 "
+      className=" relative scroll-mt-28 mb-28 sm:mb-40 px-4 "
     >
       <SectionHeading>My experience</SectionHeading>
     
@@ -47,10 +47,11 @@ export default function Experience() {
                 background: theme === "light" ? "#ffffff40" : "#02493827",
                 fontSize: "1.5rem",
               }}
+              className="text-clamp text-normal   font-mono"
             >
-              <h3 className="font-semibold capitalize">{item.title}</h3>
-              <p className="font-normal !mt-0">{item.location}</p>
-              <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
+              <h3 className="font-semibold capitalize text-clamp text-normal   font-mono">{item.title}</h3>
+              <p className="font-normal !mt-0 text-clamp text-normal   font-mono">{item.location}</p>
+              <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75 text-clamp text-normal   font-mono">
                 {item.description}
               </p>
             </VerticalTimelineElement>

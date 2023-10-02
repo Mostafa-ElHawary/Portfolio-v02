@@ -12,7 +12,7 @@ export default function About() {
   return (
     <motion.section
       ref={ref}
-      className="relative flex flex-col items-center mb-28 text-center leading-8 scroll-mt-28 font-mono text-clamp"
+      className="relative flex flex-col items-center  text-center leading-8 scroll-mt-28 font-mono text-clamp"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
@@ -62,17 +62,17 @@ export default function About() {
 
       <p className="mb-3 font-semibold !leading-[2]  text-gray-800 dark:text-gray-400">
         After graduating with a degree in{" "}
-        <span className="underline ">law</span>, I decided to pursue my passion
-        for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium underline">full-stack web development</span>.{" "}
+        <span className="underline ">law</span>, <br />  I decided to pursue my passion
+        for programming. <br />  I enrolled in a coding bootcamp and learned{" "}
+        <span className="font-medium underline">full-stack web development</span>.<br /> {" "}
         <span className="">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
+        problem-solving aspect. <br />  I <span className="underline">love</span> the
+        feeling of finally figuring out a solution to a problem.<br />  My core stack
         is{" "}
         <span className="font-medium">
           React, Next.js, Node.js, and MongoDB
         </span>
-        . I am also familiar with TypeScript and Express.js .
+        . <br /> I am also familiar with TypeScript and Express.js .
       </p>
     </motion.section>
   );
