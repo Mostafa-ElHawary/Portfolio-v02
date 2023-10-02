@@ -5,14 +5,14 @@ import React from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import { useSectionInviwe } from "@/lib/hooks";
-import portfolio from "@/public/Portfolio3.png";
+import portfolio from "@/public/portDesign.png";
 import Image from "next/image";
 export default function About() {
   const { ref } = useSectionInviwe("About", 0.7);
   return (
     <motion.section
       ref={ref}
-      className="relative flex flex-col items-center mb-28 max-w-[45rem] text-center leading-8 scroll-mt-28"
+      className="relative flex flex-col items-center mb-28 text-center leading-8 scroll-mt-28 font-mono text-clamp"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
@@ -32,6 +32,7 @@ export default function About() {
               type: "tween",
               duration: 0.2,
             }}
+
           >
             <Image
               src={portfolio}
@@ -40,7 +41,7 @@ export default function About() {
               height="192"
               quality="70"
               priority={true}
-              className="h-24 w-24 m-auto mb-8 rounded-full object-cover border-[0.35rem] border-[#7984c4] border-opacity-50  dark:border-[#0249383b] dark:border-opacity-90 shadow-xl"
+              className=" h-24 w-24 m-auto mb-8 rounded-full object-cover border-[0.35rem] border-[#7984c4] border-opacity-50  dark:border-[#0249383b] dark:border-opacity-90 shadow-xl"
             ></Image>
             <motion.span
               className="absolute bottom-10 right-1 text-2xl"
