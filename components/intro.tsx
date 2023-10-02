@@ -17,7 +17,7 @@ export default function Intro() {
   return (
     <section
       ref={ref}
-      className=" mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem] relative mr-[5rem]   ml-[5rem] lg:mr-[15rem] lg:ml-[15rem] xl:mr-[20rem] xl:ml-[20rem] "
+      className=" mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem] relative mr-[1rem] ml-[1rem] lg:mr-[15rem] lg:ml-[15rem] xl:mr-[20rem] xl:ml-[20rem] "
       id="home"
     >
       {/* <div className=" absolute top-[10rem] left-[-3rem] -z-10  h-[10.25rem] w-[26.25rem] rounded-full bg-gradient-to-r from-indigo-500 to-emerald-500 blur-[10rem] sm:w-[50.75rem]  md:right-[-4rem] lg:right-5rem] xl:right-[-10rem] 2xl:right-[-5rem]  dark:bg-[	#301720] -rotate-[145deg]"></div>
