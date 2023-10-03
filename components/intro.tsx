@@ -28,9 +28,9 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold  text-[11px] sm:text-[15px] md:text-2xl lg:text-3xl xl:text-3xl">Hello, <span className="text-[#64ffda]">I'm Mostafa El Hawary. </span> <br /></span> 
+        <span className="font-bold  text-[11px] sm:text-[15px] md:text-2xl lg:text-3xl xl:text-3xl">Hello, <span className="dark:text-[#64ffda] text-indigo-400">I'm Mostafa El Hawary. </span> <br /></span> 
         <span className="font-bold text-[11px] textResizeP2">I'm a{" "}Software Engineer</span> with{" "}
-        <span className="font-bold"><span className="text-[#64ffda] text-[11px] textResizeP2">2 years</span></span> of experience.
+        <span className="font-bold"><span className="dark:text-[#64ffda] text-indigo-400 text-[11px] textResizeP2">2 years</span></span> of experience.
       </motion.h1>
       <motion.h2
         className="mb-10 px-4 text-[15px] font-medium !leading-[1.5] sm:text-3xl text-start font-mono"
@@ -38,7 +38,7 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="font-bold text-[15px] textResizeP2">I Build Stuff For The Web. <br /> You can see my work
-        on </span> <span className="font-bold  cursor-pointer text-[#64ffda] text-[15px]">GitHub </span>for more details.{" "}
+        on </span> <span className="font-bold  cursor-pointer dark:text-[#64ffda] text-indigo-400 text-[15px]">GitHub </span>for more details.{" "}
         <span className="font-bold  text-[17px] textResizeP2">Have a nice day!</span>{" "}
       </motion.h2>
       <motion.div

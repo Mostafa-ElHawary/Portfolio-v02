@@ -22,14 +22,14 @@ export default function Header() {
           {links.map((link) => (
             <motion.li
               key={link.hash}
-              className="h-3/4 flex items-center justify-center relative font-semibold font-mono"
+              className="h-3/4 flex items-center justify-center relative font-semibold font-mono text-[11px] sm:text-[13px]  "
               initial={{ y: -100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
             >
               <Link
                 href={link.hash}
                 className={clsx(
-                  "flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition   dark:text-gray-500 dark:hover:text-gray-300",
+                  "flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition   dark:text-gray-500 dark:hover:text-gray-300 ",
                   {
                     "text-gray-950 dark:text-white":
                       activeSection === link.name,
