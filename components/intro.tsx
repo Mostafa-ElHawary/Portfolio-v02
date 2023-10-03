@@ -20,8 +20,9 @@ export default function Intro() {
       className=" mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem] relative mr-[1rem] ml-[1rem] lg:mr-[15rem] lg:ml-[15rem] xl:mr-[20rem] xl:ml-[20rem] "
       id="home"
     >
-      {/* <div className=" absolute top-[10rem] left-[-3rem] -z-10  h-[10.25rem] w-[26.25rem] rounded-full bg-gradient-to-r from-indigo-500 to-emerald-500 blur-[10rem] sm:w-[50.75rem]  md:right-[-4rem] lg:right-5rem] xl:right-[-10rem] 2xl:right-[-5rem]  dark:bg-[	#301720] -rotate-[145deg]"></div>
-      <div className=" absolute top-[10rem] left-[-3rem] -z-10  h-[5.25rem] w-[26.25rem] rounded-full bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%  blur-[10rem] sm:w-[50.75rem] md:right-[-4rem] lg:right-[5rem] xl:right-[-10rem] 2xl:right-[-5rem]  dark:bg-[	#301720] -rotate-[45deg]"></div> */}
+      {/* <div className=" absolute top-[10rem] left-[-3rem] -z-10  h-[10.25rem] w-[26.25rem] rounded-full bg-gradient-to-r from-indigo-500 to-emerald-500 blur-[0rem] sm:w-[50.75rem]  md:right-[-4rem] lg:right-5rem] xl:right-[-10rem] 2xl:right-[-5rem]  dark:bg-[	#301720] -rotate-[145deg]"></div> */}
+      <div className=" absolute top-[10rem] left-[-6rem] -z-10  h-[5.25rem] w-[30.25rem] rounded-full bg-gradient-to-r from-indigo-500 from-20% via-sky-500 via-40% to-emerald-500 to-80%  blur-[4rem] sm:w-[50.75rem] md:right-[-4rem] lg:right-[5rem] xl:right-[-10rem] 2xl:right-[-5rem]  dark:bg-[	#301720] -rotate-[75deg]"></div>
+
       <motion.h1 
         className=" mt-4 px-4 text-[14px] font-medium !leading-[1.5] sm:text-4xl  text-start font-mono"
         initial={{ opacity: 0, y: 100 }}
@@ -56,7 +57,7 @@ export default function Intro() {
             setTimeOfLastClick(Date.now())
           }}>
           Contact me here{" "}
-          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
+          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition " />
         </Link>
     <div className="grid grid-cols-3 gap-2 text-center">
     <a
@@ -65,7 +66,7 @@ export default function Intro() {
           download
         >
           CV{" "}
-          <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
+          <HiDownload className="opacity-60 group-hover:translate-y-1 transition " />
         </a>{" "}
         <a
           className=" bg-white text-[14px] font-mono    text-gray-950 hover:text-gray-950 flex items-center justify-center gap-1 rounded-lg focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer  dark:text-white  dark:bg-white/10"
