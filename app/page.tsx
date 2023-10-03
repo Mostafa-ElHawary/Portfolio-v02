@@ -13,11 +13,13 @@ export default function Home() {
       <Intro />
       <Line />
       <Experience />
+      <Line />
       <About />
       <Line />
       <Projects />
       <Line />
       <Skills />
+      <Line />
       <Contact/>
 
     </main>

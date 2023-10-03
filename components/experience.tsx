@@ -29,7 +29,7 @@ export default function Experience() {
           <React.Fragment key={index}>
             <VerticalTimelineElement
               contentStyle={{
-                background: theme === "light" ? "#ffffff40" : "#45575326 ",
+                background: theme === "light" ? "#ffffff40" : "#ffffff10",
                 boxShadow: "none",
                 border: "1px solid rgba(0, 0, 0, 0.05)",
                 textAlign: "left",
@@ -39,12 +39,12 @@ export default function Experience() {
                 borderRight:
                   theme === "light"
                     ? "0.4rem solid #ffffff40"
-                    : "0.4rem solid #45575326",
+                    : "0.4rem solid #ffffff10",
               }}
               date={item.date}
               icon={item.icon}
               iconStyle={{
-                background: theme === "light" ? "#ffffff40" : "#02493827",
+                background: theme === "light" ? "#ffffff40" : "#ffffff10",
                 fontSize: "1.5rem",
               }}
               className="text-clamp text-normal   font-mono"
