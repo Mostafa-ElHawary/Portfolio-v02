@@ -29,7 +29,7 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold  text-[14px] sm:text-[15px] md:text-2xl lg:text-3xl xl:text-3xl">Hello, <span className="dark:text-[#64ffda] text-indigo-600">I'm Mostafa El Hawary. </span> <br /></span> 
+        <span className="font-bold  text-[13px] sm:text-[15px] md:text-2xl lg:text-3xl xl:text-3xl">Hello, <span className="dark:text-[#64ffda] text-indigo-600">I'm Mostafa El Hawary. </span> <br /></span> 
         <span className="font-bold text-[11px] textResizeP2">I'm a{" "}Software Engineer</span> with{" "}
         <span className="font-bold"><span className="dark:text-[#64ffda] text-indigo-600 text-[11px] textResizeP2">2 years</span></span> of experience.
       </motion.h1>

@@ -42,7 +42,7 @@ export default function About() {
               height="192"
               quality="70"
               priority={true}
-              className=" h-24 w-24 m-auto mb-8 rounded-full object-cover border-[0.35rem] border-[#7984c4] border-opacity-60  dark:border-[#0249383b] dark:border-opacity-90 shadow-xl"
+              className=" h-24 w-24 m-auto mb-8 rounded-full object-cover border-[0.35rem] border-[#7984c4] border-opacity-30  dark:border-[#0249383b] dark:border-opacity-90 shadow-xl"
             ></Image>
             <motion.span
               className="absolute bottom-10 right-1 text-2xl"
