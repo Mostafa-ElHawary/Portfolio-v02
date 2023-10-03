@@ -46,15 +46,15 @@ export const experiencesData = [
   },
   {
     title: "Front-End Developer",
-    location: "Orlando, FL",
+    location: "EG",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "I worked as a front-end developer for 1 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
     icon: React.createElement(CgWorkAlt),
     date: "2019 - 2021",
   },
   {
     title: "Full-Stack Developer",
-    location: "Houston, TX",
+    location: "Cairo",
     description:
       "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
     icon: React.createElement(FaReact),
@@ -62,9 +62,9 @@ export const experiencesData = [
   },
   {
     title: "Full-Stack Developer",
-    location: "Houston, TX",
+    location: "Cairo",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "I love the feeling of finally figuring out a solution to a problem .My core stack is Mern satck",
     icon: React.createElement(HiCodeBracket),
     date: "2023 - present",
   },
