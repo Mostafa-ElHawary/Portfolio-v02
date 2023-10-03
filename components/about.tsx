@@ -60,7 +60,7 @@ export default function About() {
         </div>
       </div>
 
-      <p className="mb-3 font-semibold !leading-[2]  text-gray-800 dark:text-gray-400">
+      <p className=" font-semibold !leading-[2] mb-28 md:mb-0  text-gray-800 dark:text-gray-400 text-[12px] sm:text-[15px] md:text-xl  ">
         After graduating with a degree in{" "}
         <span className="underline ">law</span>, <br />  I decided to pursue my passion
         for programming. <br />  I enrolled in a coding bootcamp and learned{" "}
