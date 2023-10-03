@@ -31,7 +31,7 @@ export default function Skills() {
     className="  flex flex-col relative items-center  justify-center mb-28  scroll-mt-28 text-center sm:mb-40 mr-[1rem]   ml-[1rem] lg:mr-[15rem] lg:ml-[15rem] xl:mr-[20rem] xl:ml-[20rem]"
     >
       <SectionHeading >A few technologies I've been working with</SectionHeading>
-    <div className=" absolute top-[15rem] left-[-6rem] -z-10  h-[3.25rem] w-[30.25rem] rounded-full bg-gradient-to-r from-sky-700 from-20% via-sky-500 via-40% to-[#173027]  to-80%  blur-[4rem] sm:w-[50.75rem] md:right-[-4rem] lg:right-[5rem] xl:right-[-10rem] 2xl:right-[-5rem]  dark:bg-[	#301720] -rotate-[100deg]"></div>
+    <div className=" absolute top-[20rem] left-[-6rem] -z-10  h-[3.25rem] w-[30.25rem] rounded-full bg-gradient-to-r from-sky-600 from-20% via-sky-500 via-40% to-emerald-500  to-80%  blur-[4rem] sm:w-[50.75rem] md:right-[-4rem] lg:right-[5rem] xl:right-[-10rem] 2xl:right-[-5rem]  dark:bg-[	#301720] -rotate-[75deg]"></div>
 
       <ul className="flex flex-wrap justify-center gap-2 text-xs text-gray-800 ">
         {skillsData.map((skill, index) => (

@@ -94,6 +94,7 @@ export default function Contact() {
       }}
     >
       <SectionHeading>Get In Touch</SectionHeading>
+      {/* <div className=" absolute top-[45rem] left-[-6rem] -z-10  h-[3.25rem] w-[30.25rem] rounded-full bg-gradient-to-r from-sky-600 from-20% via-sky-500 via-40% to-emerald-500  to-80%  blur-[4rem] sm:w-[50.75rem] md:right-[-4rem] lg:right-[5rem] xl:right-[-10rem] 2xl:right-[-5rem]  dark:bg-[	#301720] -rotate-[-77deg]"></div> */}
 
       <p className="text-clamp text-gray-700  dark:text-[#8892b0] m-auto text-normal   font-mono">
       My inbox is always open for you!  <br /> contact me directly at{" "} <br /> 
