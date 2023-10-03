@@ -18,6 +18,9 @@ html.dark {
 .textResizeP1 {
   @apply text-2xl  sm:text-3xl md:text-4xl;
 }
+.textResizeP2 {
+  @apply text-xl  sm:text-3xl md:text-4xl;
+}
 
 .elementCenter {
   @apply flex flex-col justify-start items-center;

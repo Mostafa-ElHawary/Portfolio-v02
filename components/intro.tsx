@@ -28,17 +28,17 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="font-bold  text-[11px] sm:text-[15px] md:text-2xl lg:text-3xl xl:text-3xl">Hello, <span className="text-[#64ffda]">I'm Mostafa El Hawary. </span> <br /></span> 
-        <span className="font-bold text-[11px]">I'm a{" "}Software Engineer</span> with{" "}
-        <span className="font-bold"><span className="text-[#64ffda] text-[11px]">2 years</span></span> of experience.
+        <span className="font-bold text-[11px] textResizeP2">I'm a{" "}Software Engineer</span> with{" "}
+        <span className="font-bold"><span className="text-[#64ffda] text-[11px] textResizeP2">2 years</span></span> of experience.
       </motion.h1>
       <motion.h2
         className="mb-10 px-4 text-[15px] font-medium !leading-[1.5] sm:text-3xl text-start font-mono"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold text-[15px]">I Build Stuff For The Web. <br /> You can see my work
+        <span className="font-bold text-[15px] textResizeP2">I Build Stuff For The Web. <br /> You can see my work
         on </span> <span className="font-bold  cursor-pointer text-[#64ffda] text-[15px]">GitHub </span>for more details.{" "}
-        <span className="font-bold  text-[17px]">Have a nice day!</span>{" "}
+        <span className="font-bold  text-[17px] textResizeP2">Have a nice day!</span>{" "}
       </motion.h2>
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
@@ -60,7 +60,7 @@ export default function Intro() {
         </Link>
     <div className="grid grid-cols-3 gap-2 text-center">
     <a
-          className="group text-[14px] font-mono bg-white px-5 py-2 flex items-center justify-center gap-2 rounded-lg outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer dark:text-white  dark:bg-white/10"
+          className="group text-[14px]  font-mono bg-white px-5 py-2 flex  items-center justify-center gap-1 rounded-lg outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer dark:text-white  dark:bg-white/10"
           href="/CV.pdf"
           download
         >
@@ -68,14 +68,14 @@ export default function Intro() {
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>{" "}
         <a
-          className=" bg-white text-[14px] font-mono   p-4 text-gray-950 hover:text-gray-950 flex items-center justify-center gap-2 rounded-lg focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer  dark:text-white  dark:bg-white/10"
+          className=" bg-white text-[14px] font-mono    text-gray-950 hover:text-gray-950 flex items-center justify-center gap-1 rounded-lg focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer  dark:text-white  dark:bg-white/10"
           href="https://www.linkedin.com/in/mostafa-el-hawary-542813248/"
           target="_blank"
         >
           <BsLinkedin  />
         </a>
         <a
-          className="bg-white text-[14px] font-mono p-4 text-gray-950 flex items-center justify-center gap-2  rounded-lg focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer  dark:text-white  dark:bg-white/10"
+          className="bg-white text-[14px] font-mono  text-gray-950 flex items-center justify-center gap-1  rounded-lg focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer  dark:text-white  dark:bg-white/10"
           href="https://github.com/Mostafa-ElHawary"
           target="_blank"
         >
