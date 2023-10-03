@@ -60,7 +60,7 @@ export default function Intro() {
         </Link>
     <div className="grid grid-cols-3 gap-2 text-center">
     <a
-          className="group text-[13px] font-mono bg-white px-5 py-2 flex items-center justify-center gap-2 rounded-lg outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer dark:text-white  dark:bg-white/10"
+          className="group text-[14px] font-mono bg-white px-5 py-2 flex items-center justify-center gap-2 rounded-lg outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer dark:text-white  dark:bg-white/10"
           href="/CV.pdf"
           download
         >
@@ -68,14 +68,14 @@ export default function Intro() {
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>{" "}
         <a
-          className=" bg-white text-[13px] font-mono   p-4 text-gray-950 hover:text-gray-950 flex items-center justify-center gap-2 rounded-lg focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer  dark:text-white  dark:bg-white/10"
+          className=" bg-white text-[14px] font-mono   p-4 text-gray-950 hover:text-gray-950 flex items-center justify-center gap-2 rounded-lg focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer  dark:text-white  dark:bg-white/10"
           href="https://www.linkedin.com/in/mostafa-el-hawary-542813248/"
           target="_blank"
         >
           <BsLinkedin  />
         </a>
         <a
-          className="bg-white text-[13px] font-mono p-4 text-gray-950 flex items-center justify-center gap-2  rounded-lg focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer  dark:text-white  dark:bg-white/10"
+          className="bg-white text-[14px] font-mono p-4 text-gray-950 flex items-center justify-center gap-2  rounded-lg focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer  dark:text-white  dark:bg-white/10"
           href="https://github.com/Mostafa-ElHawary"
           target="_blank"
         >
