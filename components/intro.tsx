@@ -21,8 +21,8 @@ export default function Intro() {
       id="home"
     >
       {/* <div className=" absolute top-[10rem] left-[-3rem] -z-10  h-[10.25rem] w-[26.25rem] rounded-full bg-gradient-to-r from-indigo-500 to-emerald-500 blur-[0rem] sm:w-[50.75rem]  md:right-[-4rem] lg:right-5rem] xl:right-[-10rem] 2xl:right-[-5rem]  dark:bg-[	#301720] -rotate-[145deg]"></div> */}
-      <div className=" absolute top-[10rem] left-[-6rem] -z-10  h-[3.25rem] w-[30.25rem] rounded-full bg-gradient-to-r from-indigo-500 from-20% via-sky-500 via-40% to-emerald-500 to-80%  blur-[4rem] sm:w-[50.75rem] md:right-[-4rem] lg:right-[5rem] xl:right-[-10rem] 2xl:right-[-5rem]  dark:bg-[	#301720] -rotate-[75deg]"></div>
-      <div className=" absolute top-[20rem] left-[11rem] md:left-[20rem] -z-10  h-[3.25rem] w-[10.25rem] rounded-full bg-gradient-to-r from-indigo-500 from-20% via-sky-500 via-40% to-sky-500 to-80%  blur-[4rem] sm:w-[10.75rem] md:right-[-4rem] lg:right-[5rem] xl:right-[-10rem] 2xl:right-[-5rem]  dark:bg-[	#301720] -rotate-[75deg]"></div>
+      <div className=" absolute top-[10rem] left-[-6rem] -z-10  h-[3.25rem] w-[30.25rem] rounded-full bg-gradient-to-r from-indigo-500 from-20% via-sky-500 via-40% to-emerald-500 to-80%  blur-[6rem] sm:w-[50.75rem] md:right-[-4rem] lg:right-[5rem] xl:right-[-10rem] 2xl:right-[-5rem]  dark:bg-[	#301720] -rotate-[75deg]"></div>
+      <div className=" absolute top-[20rem] left-[11rem] md:left-[20rem] -z-10  h-[3.25rem] w-[10.25rem] rounded-full bg-gradient-to-r from-indigo-500 from-70% via-sky-500 via-90% to-sky-500 to-80%  blur-[6rem] sm:w-[10.75rem] md:right-[-4rem] lg:right-[5rem] xl:right-[-10rem] 2xl:right-[-5rem]  dark:bg-[	#301720] -rotate-[75deg]"></div>
 
       <motion.h1 
         className=" mt-4 px-4 text-[14px] font-medium !leading-[1.5] sm:text-4xl  text-start font-mono"
@@ -43,7 +43,7 @@ export default function Intro() {
         <span className="font-bold  text-[17px] textResizeP2">Have a nice day!</span>{" "}
       </motion.h2>
       <motion.div
-        className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
+        className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium "
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
@@ -52,17 +52,17 @@ export default function Intro() {
       >
         <Link
           href="#contact"
-          className="group text-[13px] font-mono bg-gray-900  border-opacity-100 text-white px-6 py-2 flex items-center gap-2 rounded-lg outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition dark:bg-white/3 dark:bg-[#02493967] dark:border-2 dark:border-[#64ffda]  dark:bg-opacity-70" 
+          className="group text-[13px] md:h-[50px] font-mono bg-gray-900  border-opacity-100 text-white px-6 py-2 flex items-center gap-2 rounded-lg outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition dark:bg-white/3 dark:bg-[#02493967] dark:border-2 dark:border-[#64ffda]  dark:bg-opacity-70" 
           onClick={() => {
             setActiveSection("Contact")
             setTimeOfLastClick(Date.now())
           }}>
-          Contact me here{" "}
+          Contact me here
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition " />
         </Link>
-    <div className="grid grid-cols-3 gap-2 text-center">
+    <div className="grid grid-cols-3 gap-2 text-center ">
     <a
-          className="group  bg-opacity-40 text-[17px]  font-mono bg-white px-5 py-2 flex  items-center justify-center gap-1 rounded-lg outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer dark:text-white  dark:bg-white/10"
+          className="group  bg-opacity-40 text-[17px]  font-mono bg-white px-3 py-2 flex  items-center justify-center  gap-1 rounded-lg outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer dark:text-white  dark:bg-white/10"
           href="/CV.pdf"
           download
         >
