@@ -51,9 +51,9 @@ export default function Intro() {
         <span className="font-bold text-[15px] textResizeP2">
           I Build Stuff For The Web. <br /> You can see my work on {" "}
         </span> 
-          <span className="font-bold  cursor-pointer dark:text-[#64ffda] text-indigo-800 text-[15px] textResizeP2">
-            GitHub </span>
-            for more details.{" "}
+          <Link href='https://github.com/Mostafa-ElHawary' target="_blank" className="font-bold  cursor-pointer dark:text-[#64ffda] text-indigo-800 text-[15px] textResizeP2">
+            GitHub</Link>
+            {" "}for more details.{" "}
         <span className="font-bold  text-[17px] textResizeP2">Have a nice day!</span>{" "}
       </motion.h2>
 
