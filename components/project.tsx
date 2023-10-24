@@ -29,7 +29,7 @@ export default function Project({
       style={{ scale: scrollProgress, opacity: scrollOpacity }}
       className="elementCenter group   mb-3 sm:mb-8 last:mb-0 "
     >
-      
+      {/* didt't forget change the description in data */}
       <Link
         href={link}
         key={id}
