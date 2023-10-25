@@ -113,12 +113,12 @@ export const projectsData = [
   },
   {
     id:5,
-    title: "BuyMore",
+    title: "Designify",
     description:
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
     imageUrl: wordanalyticsImg,
-    link:'https://github.com/Mostafa-ElHawary/Portfolio-v02'
+    link:'https://github.com/Mostafa-ElHawary/Designify-'
   },
 ] as const;
 
