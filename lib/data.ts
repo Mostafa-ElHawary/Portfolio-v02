@@ -75,50 +75,49 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    id:1,
+    id: 1,
     title: "Portfolio",
     description:
       "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
     tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
     imageUrl: corpcommentImg,
-    link:'https://github.com/Mostafa-ElHawary/Portfolio-v02'
-
+    link: "https://github.com/Mostafa-ElHawary/Portfolio-v02",
   },
   {
-    id:2,
+    id: 2,
     title: "CarHub",
     description:
       "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
     imageUrl: rmtdevImg,
-    link:'https://github.com/Mostafa-ElHawary/CarHub'
+    link: "https://github.com/Mostafa-ElHawary/CarHub",
   },
   {
-    id:3,
+    id: 3,
     title: "Todowebapp",
     description:
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
     tags: ["React", "Next.js", "Tailwind", "Framer"],
     imageUrl: cleverBot,
-    link:'https://github.com/Mostafa-ElHawary/Todowebapp'
+    link: "https://github.com/Mostafa-ElHawary/Todowebapp",
   },
   {
-    id:4,
+    id: 4,
     title: "Digital Agancy",
     description:
       "new hero header concept and a cute Monster character I created last weekend , It has features like filtering, sorting and pagination.",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
     imageUrl: supaui,
-    link:'https://github.com/Mostafa-ElHawary/Digital-Agency'
+    link: "https://github.com/Mostafa-ElHawary/Digital-Agency",
   },
   {
-    id:5,
+    id: 5,
     title: "Designify",
     description:
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
     imageUrl: wordanalyticsImg,
-    link:'https://github.com/Mostafa-ElHawary/Designify-'
+    link: "https://github.com/Mostafa-ElHawary/Designify-",
   },
 ] as const;
 
