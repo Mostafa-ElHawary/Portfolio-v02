@@ -31,7 +31,10 @@ export const links = [
     name: "Skills",
     hash: "#skills",
   },
-
+  {
+    name: "Problems",
+    hash: "#Problems",
+  },
   {
     name: "Contact",
     hash: "#contact",
@@ -138,4 +141,17 @@ export const skillsData = [
   "Python",
   "Django",
   "Firebase",
+] as const;
+
+export const ProblemsSites = [
+  {
+    id: 1,
+    Name: "LeetCode",
+    link: "https://github.com/Mostafa-ElHawary/JS-ProblemSolving/tree/main/LeetCode",
+  },
+  {
+    id: 2,
+    Name: "CodeWarse",
+    link: "https://github.com/Mostafa-ElHawary/JS-ProblemSolving/tree/main/Codewars",
+  },
 ] as const;

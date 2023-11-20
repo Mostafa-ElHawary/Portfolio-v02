@@ -4,6 +4,7 @@ import Line from "@/components/line";
 import Experience from "@/components/experience";
 import Projects from "@/components/projects";
 import Skills from "@/components/skills";
+import ProblemSolving from "@/components/problemSolving";
 import About from "@/components/about";
 import Contact from "@/components/contact";
 
@@ -19,6 +20,7 @@ export default function Home() {
       <Projects />
       <Line />
       <Skills />
+      <ProblemSolving />
       <Line />
       <Contact/>
 
