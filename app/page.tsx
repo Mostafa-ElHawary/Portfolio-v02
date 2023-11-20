@@ -20,6 +20,7 @@ export default function Home() {
       <Projects />
       <Line />
       <Skills />
+      <Line />
       <ProblemSolving />
       <Line />
       <Contact/>
