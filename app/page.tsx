@@ -4,7 +4,6 @@ import Line from "@/components/line";
 import Experience from "@/components/experience";
 import Projects from "@/components/projects";
 import Skills from "@/components/skills";
-import ProblemSolving from "@/components/problemSolving";
 import About from "@/components/about";
 import Contact from "@/components/contact";
 
@@ -21,10 +20,8 @@ export default function Home() {
       <Line />
       <Skills />
       <Line />
-      <ProblemSolving />
-      <Line />
       <Contact/>
-
+  {/* this command  */}
     </main>
   );
 }

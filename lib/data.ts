@@ -24,10 +24,6 @@ export const links = [
     hash: "#about",
   },
   {
-    name: "Projects",
-    hash: "#projects",
-  },
-  {
     name: "Skills",
     hash: "#skills",
   },
@@ -146,7 +142,7 @@ export const skillsData = [
 export const ProblemsSites = [
   {
     id: 1,
-    Name: "LeetCode",
+    Name: "LeetCode ||",
     link: "https://github.com/Mostafa-ElHawary/JS-ProblemSolving/tree/main/LeetCode",
   },
   {

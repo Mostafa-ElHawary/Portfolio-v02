@@ -7,6 +7,9 @@ import { motion } from "framer-motion";
 import { useSectionInviwe } from "@/lib/hooks";
 import portfolio from "@/public/portDesign.png";
 import Image from "next/image";
+import { ProblemsSites } from "@/lib/data";
+import Link from "next/link";
+
 export default function About() {
   const { ref } = useSectionInviwe("About", 0.7);
   return (
@@ -33,7 +36,6 @@ export default function About() {
               type: "tween",
               duration: 0.2,
             }}
-
           >
             <Image
               src={portfolio}
@@ -62,18 +64,36 @@ export default function About() {
       </div>
 
       <p className=" font-semibold !leading-[2] mb-28 md:mb-0  text-gray-800 dark:text-gray-400 text-[12px] sm:text-[15px] md:text-xl  ">
-        After graduating with a degree in{" "}
-        <span className="underline ">law</span>, <br />  I decided to pursue my passion
-        for programming. <br />  I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium underline">full-stack web development</span>.<br /> {" "}
-        <span className="">My favorite part of programming</span> is the
-        problem-solving aspect. <br />  I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem.<br />  My core stack
-        is{" "}
+        After earning a degree in 
+        <span className="underline ">law</span>,{" "}
+        <br /> I made a decisive shift to follow my true passion—programming{" "}
+        <br />I took a significant step by enrolling in a coding bootcamp, 
+        <br/>where I delved into the realm of{" "}
+        <span className="font-medium underline"> full-stack web development </span>
+        .<br />{" "}
+        <span className="">What captivates me the most about programming </span>
+        is the thrill of problem-solving.
+        <br /> I <span className="underline">love</span> the feeling of finally figuring out a solution to a problem. 
+        <br /> My journey includes tackling challenges on platforms like{" "}
+        <span className="font-medium ">
+          {ProblemsSites.map((Site, index) => (
+            <Link
+              href={Site.link}
+              key={index}
+              className=" dark:text-[#64ffda] text-indigo-800 text-clamp text-normal   font-mono  px-1 py-3 "
+            >
+              {Site.Name}
+            </Link>
+          ))}{" "}
+         <br/> where I showcase my problem-solving skills
+        </span>{" "}
+        <br /> I specialize in a core stack comprising{" "}
         <span className="font-medium">
           React, Next.js, Node.js, and MongoDB
         </span>
-        . <br /> I am also familiar with TypeScript and Express.js .
+        . <br /> Additionally, I'm well-versed in TypeScript and Express.js,
+       <br /> rounding out my toolkit for versatile and dynamic web development.{" "}
+        <br />
       </p>
     </motion.section>
   );
