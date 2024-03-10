@@ -27,7 +27,7 @@ export default function About() {
       {/* <div className="bg-[#7984c4] absolute top-[5rem] -z-10 left-[-30rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-50rem] xl:left-[-35rem] 2xl:left-[-40rem] dark:bg-[#173027]"></div> */}
       <div className=" absolute top-[10rem] left-[-6rem] md:left-[10rem] -z-10  h-[3.25rem] w-[30.25rem] rounded-full bg-gradient-to-r from-indigo-600 from-20% via-indigo-600 via-40% to-emerald-500 to-80%  blur-[6rem] sm:w-[50.75rem] md:right-[-4rem] lg:right-[5rem] xl:right-[-10rem] 2xl:right-[-5rem]  dark:bg-[	#301720] -rotate-[100deg]"></div>
 
-      <div className="flex items-center justify-center  leading-relaxed text-gray-700">
+      <div className="md:flex hidden items-center  justify-center  leading-relaxed text-gray-700">
         <div className=" relative  ">
           <motion.div
           className="relative top-8"
@@ -45,7 +45,7 @@ export default function About() {
               height="192"
               quality="95"
               priority={true}
-              className=" h-34 w-34 m-auto mb-8 rounded-full object-cover border-[0.35rem] border-[#7984c4] border-opacity-30  dark:border-[#0249383b] dark:border-opacity-90 shadow-xl"
+              className=" h-[12rem] w-[11rem] m-auto mb-8 rounded-full object-cover border-[0.35rem] border-[#7984c4] border-opacity-30  dark:border-[#0249383b] dark:border-opacity-90 shadow-xl"
             ></Image>
             <motion.span
               className="absolute bottom-10 right-1 text-2xl"
