@@ -15,7 +15,7 @@ export default function About() {
   return (
     <motion.section
       ref={ref}
-      className="relative flex flex-col items-center  text-center leading-8 scroll-mt-28 font-mono text-clamp"
+      className="relative flex flex-col items-center  text-start leading-8 scroll-mt-28 font-mono text-clamp"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
@@ -63,17 +63,19 @@ export default function About() {
         </div>
       </div>
 
-      <p className="  !leading-[2] mb-28 md:mb-0  text-gray-800 dark:text-gray-400 text-[12px] sm:text-[15px] md:text-xl  ">
+      <p className="  !leading-[2] mb-28 mt-28 md:mb-0  text-gray-800 dark:text-gray-400 text-[12px] sm:text-[15px] md:text-xl  ">
         After earning a degree in 
         <span className="underline ">law</span>,{" "}
         <br /> I made a decisive shift to follow my true passion—programming{" "}
-        <br />I took a significant step by enrolling in a coding bootcamp, 
+        <br />I took a significant step by enrolling in a coding bootcamp , 
+        <p></p>
         <br/>where I delved into the realm of{" "}
         <span className="font-medium underline"> full-stack web development </span>
         .<br />{" "}
         <span className="">What captivates me the most about programming </span>
-        is the thrill of problem-solving.
-        <br /> I <span className="underline">love</span> the feeling of finally figuring out a solution to a problem. 
+        is the thrill of problem-solving .
+        <p></p>
+        <br /> I <span className="underline">love</span> the feeling of finally figuring out a solution to a problem . 
         <br /> My journey includes tackling challenges on platforms like{" "}
         <span className="font-medium ">
           {ProblemsSites.map((Site, index) => (
@@ -85,13 +87,15 @@ export default function About() {
               {Site.Name}
             </Link>
           ))}{" "}
+           <p></p>
          <br/> where I showcase my problem-solving skills
         </span>{" "}
         <br /> I specialize in a core stack comprising{" "}
         <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
+          React, Next.js, Node.js, and MongoDB .
         </span>
-        . <br /> Additionally, I'm well-versed in TypeScript and Express.js,
+        <p></p>
+        <br /> Additionally, I'm well-versed in TypeScript and Express.js ,
        <br /> rounding out my toolkit for versatile and dynamic web development.{" "}
         <br />
       </p>

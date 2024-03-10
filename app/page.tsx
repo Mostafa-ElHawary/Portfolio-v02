@@ -21,7 +21,6 @@ export default function Home() {
       <Skills />
       <Line />
       <Contact/>
-  {/* this command  */}
     </main>
   );
 }

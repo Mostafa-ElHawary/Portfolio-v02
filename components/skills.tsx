@@ -28,7 +28,7 @@ export default function Skills() {
     <section
     id="skills"
     ref={ref}
-    className="  flex flex-col relative items-center  justify-center mb-28  scroll-mt-28 text-center sm:mb-40 mr-[1rem]   ml-[1rem] lg:mr-[15rem] lg:ml-[15rem] xl:mr-[25rem] xl:ml-[25rem]"
+    className="  flex flex-col relative items-center  justify-center h-[80vh]  text-center  mr-[1rem]   ml-[1rem] lg:mr-[15rem] lg:ml-[15rem] xl:mr-[25rem] xl:ml-[25rem]"
     >
       <SectionHeading >A few technologies I've been working with</SectionHeading>
     <div className=" absolute top-[20rem] left-[-6rem] -z-10  h-[3.25rem] w-[30.25rem] rounded-lg bg-gradient-to-r from-sky-600 from-20% via-sky-500 via-40% to-emerald-500  to-80%  blur-[6rem] sm:w-[50.75rem] md:right-[-4rem] lg:right-[5rem] xl:right-[-10rem] 2xl:right-[-5rem]  dark:bg-[	#301720] -rotate-[75deg]"></div>
